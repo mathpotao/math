@@ -3,12 +3,22 @@
 
     <head>
         <meta charset="utf-8"/>
-        <script async="true" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=AM_CHTML"> </script>
         <title>Fonctions affines</title>
         <link rel="stylesheet" href="../style/style.css"/>
         <script src="../style/scriptfooter.js"></script>
-        <script src="script/script_affines.js"></script>
         <script src="script/script_fonctions.js"></script>
+        <script src="script/script_affines.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
     </head>
 
     <header> Les Fonctions affines </header>
@@ -33,13 +43,23 @@
 
             <br>
                 <h1>1. Définition et exemples :</h1> 
-                    <b class='def'>Définition :</b> 
-                        <div class="cmath">
-                            Une fonction affine est une fonction définie sur `RR` par : `f(x) = ax+b`
-                            avec `a` et `b` deux réels. <br>
-                            Le réel `a` s'appelle le coefficient directeur
-                            de `f` et le réel `b` s'appelle l'ordonnée à l'origine de `f`.
-                        </div>
+                    <p>
+                        <b class='def'>Définition :</b> 
+                            <div class="cmath">
+                                Une fonction affine est une fonction définie sur $\Bbb R$ par : $f(x) = ax+b$
+                                avec $a$ et $b$ deux réels. <br>
+                                Le réel $a$ s'appelle le coefficient directeur
+                                de $f$ et le réel $b$ s'appelle l'ordonnée à l'origine de $f$.
+                            </div>
+                    </p>
+                    <p> 
+                        <b class='note'>
+                            <a href="affines_exercice1.html">
+                                Exercice 1 :
+                            </a>
+
+                        </b>
+                    </p>
                 
                 <br>
                 <br>

@@ -227,7 +227,17 @@ a:hover
   font-size:20px;
 }
 
+.juste
+{
+    color:green;
+    font-size:16px;
+}
 
+.faux
+{
+    color:red;
+    font-size:12px;
+}
 
 .def
 {
@@ -239,6 +249,13 @@ a:hover
     color:#a70caf;
 }
 
+.enonce
+{
+    color:black;
+    font:18px Arial;
+}
+
+}
 .abas
 {
     font-size:20px;

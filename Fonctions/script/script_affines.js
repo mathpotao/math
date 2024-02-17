@@ -1,10 +1,10 @@
-var tabnf = ['affines','polynomes'];
+var tabnf = ['affines_q1', 'affines_e1', 'affines_e2'];
 
+var tnf = ['href="affines_quiz1.html">Quiz 1</a>',
+           'href="affines_exercice1.html">Exercice 1</a>',
+           'href="affines_exercice2.html">Exercice 2</a>'];
 
-var tnf =  ['href="affines.html">Fonctions affines</a>',
-            'href="polynomes.html">Polynômes</a>'];
-            
-var nexnf = 2;
+var nexnf = 3;
 
 function fait()
 {
@@ -36,7 +36,7 @@ function fait()
         }
         if (fnf == nexnf)
         {
-            localStorage.setItem('web',1);
+            localStorage.setItem('webp1',1);
         }
     }
     else
