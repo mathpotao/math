@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_affines_quiz.js"></script>
+        <script src="script/script_affines.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+    </head>
+
+    <header class="quizz">Quiz sur les fonctions affines</header>
+
+    <body>
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="affines.html">Fonctions affines</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+        <section class="squizz" >
+            <form name="quizz" action="javascript:check();" class="quizzForm">
+                <div name="quiz">
+
+                    <div>
+                        <span class="spanquiz" name="sq"> &emsp; </span>
+                        <h4>Question 1 : Le coefficient directeur de la fonction affine $f$ définie par $f(x) = 5-3x$ est :</h4>
+                        <div class="question" id='q1'>
+                            <script type='text/javascript' language='javascript'>init(0);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> &emsp; </span>
+                        <h4>Question 2 : La racine de la fonction $f$ définie par $f(x) = 45-5x$ est :</h4>
+                        <div class="question" id='q2'>
+                            <script type='text/javascript' language='javascript'>init(1);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> &emsp; </span>
+                        <h4>Question 3 : L'ordonnée à l'origine de la fonction affine $f$ définie par $f(x) = 18+3x$ est :</h4>
+                        <div class="question" id='q3'>
+                            <script type='text/javascript' language='javascript'>init(2);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> &emsp; </span>
+                        <h4>Question 4 : La racine de la fonction $f$ définie par $f(x) = 3x-42$ est :</h4>
+                        <div class="question" id='q4'>
+                            <script type='text/javascript' language='javascript'>init(3);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> &emsp; </span>
+                        <h4>Question 5 : Le coefficient directeur de la fonction affine $f$ définie par $f(x) = 2+x$ est :</h4>
+                        <div class="question" id='q5'>
+                            <script type='text/javascript' language='javascript'>init(4);</script>
+                        </div>
+                    </div>
+
+                 </div>
+            </form>
+
+            <br>
+            <input class="bouton" type="button" value="Valider" onClick="verification(5)" />
+            <br>
+            <br>
+            <span id="message"> </span>
+            <br>
+            <br>
+        </section>
+    </body>
+
+    <footer class="quizz"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>
