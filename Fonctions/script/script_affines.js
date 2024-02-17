@@ -1,11 +1,12 @@
-var tabnf = ['affines_e1', 'affines_e2', 'affines_e3', 'affines_q1'];
+var tabnf = ['affines_e1', 'affines_e2', 'affines_e3', 'affines_e4', 'affines_q1'];
 
 var tnf = ['href="affines_exercice1.html">Exercice 1</a>',
            'href="affines_exercice2.html">Exercice 2</a>',
            'href="affines_exercice3.html">Exercice 3</a>',
+           'href="affines_exercice4.html">Exercice 4</a>',
            'href="affines_quiz.html">Quiz</a>'];
 
-var nexnf = 4;
+var nexnf = 5;
 
 function fait()
 {

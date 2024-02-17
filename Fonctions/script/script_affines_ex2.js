@@ -27,6 +27,6 @@ function verif()
     }
     else
     {
-        m.innerHTML = "<span class='reponse_fausse'>Mauvaise réponse ! Recommencez !</span>";
+        m.innerHTML = "<span class='reponse_fausse'>Certaines réponses sont mauvaises ! Recommencez !</span>";
     }
 }
