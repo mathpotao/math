@@ -5,7 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="../style/style.css" />
         <script src="../style/scriptfooter.js"></script>
-        <script src="script/script_affines_ex1.js"></script>
+        <script src="script/script_affines_ex3.js"></script>
         <script src="script/script_affines.js"></script>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
@@ -40,7 +40,7 @@
         <section class="sexo">
 
                 <p class='enonce'>
-                    <b>1.</b> Soit $f$ la fonction affine définie par $f(x) = 2x+3$.<br>
+                    <b>1.</b> Soit $f$ la fonction affine définie par $f(x) = -3x+12$.<br>
                 </p>
                 <p>
                     <form name="saisie_1">
@@ -49,13 +49,10 @@
                         <table>
                             <tr>
                                 <th>$x$</th>
-                                <td border="2" frame="below">$-\infty$</td>
+                                <td>$-\infty$</td>
                                 <td></td>
                                 <td>
-                                    <input type="text" class="carB" id="r1" name="n1" autocomplete="off" value='' 
-                                    onkeypress="javascript:if (event.keyCode == 13){return false;}" 
-                                    onChange="verific(0,1,1,'i1.1')"
-                                    />
+                                    <input type="text" class="carB" id="r1" name="in" autocomplete="off" value='' />
                                 </td>
                                 <td></td>
                                 <td>$+\infty$</td>
@@ -64,23 +61,134 @@
                                 <th>$f(x)$</th>
                                 <td></td>
                                 <td>
-                                    <input type="text" class="carB" id="sg1" name="n1" autocomplete="off" value='' 
-                                    onkeypress="javascript:if (event.keyCode == 13){return false;}" 
-                                    onChange="verific(0,1,1,'i1.1')"
-                                    />
+                                    <input type="text" class="carB" id="sg1" name="in" autocomplete="off" value=''/>
                                 </td>
                                 <td>$0$</td>
                                 <td>
-                                    <input type="text" class="carB" id="sd1" name="n1" autocomplete="off" value='' 
-                                    onkeypress="javascript:if (event.keyCode == 13){return false;}" 
-                                    onChange="verific(0,1,1,'i1.1')"
-                                    />
+                                    <input type="text" class="carB" id="sd1" name="in" autocomplete="off" value='' />
                                 </td>
                                 <td></td>
                             </tr>
                         </table>
                         <br>
-                         &emsp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_8',7)" />
+                         &emsp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1',0)" />
+                        <span class="spanmes"></span>
+                    </form>
+                </p>
+
+                <br>
+
+                <p class='enonce'>
+                    <b>1.</b> Soit $f$ la fonction affine définie par $f(x) = 5x+5$.<br>
+                </p>
+                <p>
+                    <form name="saisie_2">
+                        <span class="spanquiz"> &emsp; </span>
+                        <label class="saisie">Compléter le tableau de signe de $f$ :</label><br><br>
+                        <table>
+                            <tr>
+                                <th>$x$</th>
+                                <td>$-\infty$</td>
+                                <td></td>
+                                <td>
+                                    <input type="text" class="carB" id="r1" name="in" autocomplete="off" value='' />
+                                </td>
+                                <td></td>
+                                <td>$+\infty$</td>
+                            </tr>
+                            <tr>
+                                <th>$f(x)$</th>
+                                <td></td>
+                                <td>
+                                    <input type="text" class="carB" id="sg1" name="in" autocomplete="off" value=''/>
+                                </td>
+                                <td>$0$</td>
+                                <td>
+                                    <input type="text" class="carB" id="sd1" name="in" autocomplete="off" value='' />
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <br>
+                         &emsp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_2',1)" />
+                        <span class="spanmes"></span>
+                    </form>
+                </p>
+
+                <br>
+
+                <p class='enonce'>
+                    <b>1.</b> Soit $f$ la fonction affine définie par $f(x) = -3x+21$.<br>
+                </p>
+                <p>
+                    <form name="saisie_3">
+                        <span class="spanquiz"> &emsp; </span>
+                        <label class="saisie">Compléter le tableau de signe de $f$ :</label><br><br>
+                        <table>
+                            <tr>
+                                <th>$x$</th>
+                                <td>$-\infty$</td>
+                                <td></td>
+                                <td>
+                                    <input type="text" class="carB" id="r1" name="in" autocomplete="off" value='' />
+                                </td>
+                                <td></td>
+                                <td>$+\infty$</td>
+                            </tr>
+                            <tr>
+                                <th>$f(x)$</th>
+                                <td></td>
+                                <td>
+                                    <input type="text" class="carB" id="sg1" name="in" autocomplete="off" value=''/>
+                                </td>
+                                <td>$0$</td>
+                                <td>
+                                    <input type="text" class="carB" id="sd1" name="in" autocomplete="off" value='' />
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <br>
+                         &emsp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_3',2)" />
+                        <span class="spanmes"></span>
+                    </form>
+                </p>
+
+                <br>
+
+                <p class='enonce'>
+                    <b>1.</b> Soit $f$ la fonction affine définie par $f(x) = x$.<br>
+                </p>
+                <p>
+                    <form name="saisie_4">
+                        <span class="spanquiz"> &emsp; </span>
+                        <label class="saisie">Compléter le tableau de signe de $f$ :</label><br><br>
+                        <table>
+                            <tr>
+                                <th>$x$</th>
+                                <td>$-\infty$</td>
+                                <td></td>
+                                <td>
+                                    <input type="text" class="carB" id="r1" name="in" autocomplete="off" value='' />
+                                </td>
+                                <td></td>
+                                <td>$+\infty$</td>
+                            </tr>
+                            <tr>
+                                <th>$f(x)$</th>
+                                <td></td>
+                                <td>
+                                    <input type="text" class="carB" id="sg1" name="in" autocomplete="off" value=''/>
+                                </td>
+                                <td>$0$</td>
+                                <td>
+                                    <input type="text" class="carB" id="sd1" name="in" autocomplete="off" value='' />
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <br>
+                         &emsp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_4',3)" />
                         <span class="spanmes"></span>
                     </form>
                 </p>
@@ -88,7 +196,7 @@
 
                     
                 <br><br><br>
-                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(6)" />
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(4)" />
                 <br><br>
                 <span class="reponse" name="reponse"> </span>
                 <br><br>

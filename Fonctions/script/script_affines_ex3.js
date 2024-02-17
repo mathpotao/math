@@ -1,16 +1,27 @@
-var prop = ["2", "3", "-1", "4", "-0.5", "-3.2", "7", "0"];
+var prop = [["4", "+", "-"], ["-1", "-", "+"], ["7", "+", "-"], ["0", "-", "+"]];
 
 function verif(nom_form,ind)
 {
     var sp1 = document.forms[nom_form].querySelector(".spanquiz");
     var sp2 = document.forms[nom_form].querySelector(".spanmes");
     var repo = document.forms[nom_form].elements['in'];
-    repon = repo.value;
-    repon = repon.toLowerCase();
-    repon = repon.replace(/ /g,"");
-    repon = repon.replace(/ /g,"");
-    repon = repon.replace(/,/g,".");
-    if (repon == prop[ind])
+    for (var i = 0; i < 3; i++)
+    {
+        repon = repo[i].value;
+        repon = repon.toLowerCase();
+        repon = repon.replace(/ /g,"");
+        repon = repon.replace(/,/g,".");
+        repo[i] = repon;
+    }
+    somme = 0;
+    for (var i = 0; i < 3 ; i++)
+    {
+        if (repo[i].value == prop[ind][i])
+        {
+            somme++;
+        }
+    }
+    if (somme == 3)
     {
         sp1.innerHTML = "<b class='juste'>&#10004;</b>";
         sp2.innerHTML = "<span class='reponse_juste'>Bonne réponse !</span>";
@@ -31,7 +42,7 @@ function verif_exo(no)
         m.innerHTML = "<span class='reponse_juste'> Toutes les réponses sont correctes ! Exercice validé.</span>";
         if(typeof localStorage != 'undefined') 
         {
-            localStorage.setItem('affines_e1',1);
+            localStorage.setItem('affines_e3',1);
             fait();
         }
     }
