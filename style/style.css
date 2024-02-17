@@ -7,6 +7,7 @@ p
 {
     color:black;
     font-size:16px;
+    margin-left : 25px;
 }
 
 h1
@@ -242,6 +243,11 @@ a:hover
 .def
 {
     color:blue;
+}
+
+.exemple
+{
+    color:green;
 }
 
 .note
@@ -674,7 +680,7 @@ th
     width: auto;
     padding: 5px 10px 5px 10px;
     /*background-color: #1A8BBF;*/
-    background-color:#D0ECE7;
+    background-color:white;
     font-size:20px;
     text-align: center;
     font-weight : bold ;
@@ -684,7 +690,7 @@ th
 td 
 {
     font-family: sans-serif;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     border-color: #117A65;
     color:black;
     width: auto;
@@ -733,6 +739,7 @@ td
     color:white;
     font-size:18px;
     width:400px;
+    margin-left: 15px;
 }
 
 .carreR

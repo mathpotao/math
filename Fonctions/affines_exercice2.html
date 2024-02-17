@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_affines_ex2.js"></script>
+        <script src="script/script_affines.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+    </head>
+
+    <header class="exo">Exercice 2</header>
+
+    <body>
+
+        <title>Exercice 2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="affines.html">Fonctions affines</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+
+                <p class='enonce'>
+                    <b>1.</b> Soit $f$ la fonction affine définie par $f(x) = -4x+9$.<br>
+                </p>
+                <p>
+                    <form name="saisie_1">
+                        &emsp; <label class="saisie">La fonction $f$ est :</label>
+                        <select id="s1" name="n1" class="sel4" width='5'>
+                            <option>strictement croissante</option>
+                            <option>strictement décroissante</option>
+                            <option selected="selected">constante</option>
+                        </select>
+                    </form>
+                </p>
+               
+                <br>
+
+                <p class='enonce'>
+                    <b>2.</b> Soit $f$ la fonction affine définie par $f(x) = 1-x$.<br>
+                </p>
+                <p>
+                    <form name="saisie_2">
+                        &emsp; <label class="saisie">La fonction $f$ est :</label>
+                        <select id="s2" name="n2" class="sel4" width='5'>
+                            <option>strictement croissante</option>
+                            <option>strictement décroissante</option>
+                            <option selected="selected">constante</option>
+                        </select>
+                    </form>
+                </p>
+                
+                <br>
+
+                <p class='enonce'>
+                    <b>3.</b> Soit $f$ la fonction affine définie par $f(x) = 1,5x-8,1$.<br>
+                </p>
+                <p>
+                    <form name="saisie_3">
+                        &emsp; <label class="saisie">La fonction $f$ est :</label>
+                        <select id="s3" name="n3" class="sel4" width='5'>
+                            <option>strictement croissante</option>
+                            <option>strictement décroissante</option>
+                            <option selected="selected">constante</option>
+                        </select>
+                    </form>
+                </p>
+
+                <br>
+
+                <p class='enonce'>
+                    <b>4.</b> Soit $f$ la fonction affine définie par $f(x) = -5$.<br>
+                </p>
+                <p>
+                    <form name="saisie_4">
+                        &emsp; <label class="saisie">La fonction $f$ est :</label>
+                        <select id="s4" name="n4" class="sel4" width='5'>
+                            <option>strictement croissante</option>
+                            <option>strictement décroissante</option>
+                            <option selected="selected">constante</option>
+                        </select>
+                    </form>
+                </p>
+                    
+                <br><br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif()" />
+                <br><br>
+                <span class="reponse" name="reponse"> </span>
+                <br><br>
+        </section>
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>
