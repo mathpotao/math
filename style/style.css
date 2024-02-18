@@ -6,13 +6,7 @@ body
 p
 {
     color:black;
-    font-size:medium;
     margin-left : 25px;
-}
-
-.MathJax 
-{
-    font-size: 1.3em;
 }
 
 h1
@@ -20,7 +14,6 @@ h1
     color:white;
     text-align:center;
     font-weight:bold;
-    font-size:30px;
 }
 
 
@@ -29,7 +22,6 @@ h2
     color:#873600;
     text-align:left;
     font-weight:bold;
-    font-size:19px;
 }
 
 h3
@@ -37,7 +29,6 @@ h3
     color:rgb(253,63,146);
     text-align:left;
     font-weight:bold;
-    font-size:18px;
 }
 
 h4
@@ -46,7 +37,6 @@ h4
     color : rgb(102, 0, 153) ;
     text-align : left ;
     font-weight : bold ;
-    font-size : 16px;
 }
 
 h5
@@ -54,20 +44,17 @@ h5
     color:black;
     text-align:left;
     font-weight:bold;
-    font-size:16px;
 }
 
 h6
 {
     color:white;
     text-align:center;
-    font-size:14px;
 }
 
 ul
 {
     color:black;
-    font-size:16px;
 }
 
 header
@@ -108,7 +95,7 @@ footer
 .footer1
 {
     color:white;
-    font-size:16px;
+    font-size:12px;
     text-align:center;
 }
 
@@ -128,8 +115,8 @@ section
     padding:4px 4px 4px 4px;
     margin-left:180px;
     margin-bottom:10px;
-    /*min-width:550px;
-    min-height:400px;*/
+    /*min-width:550px;*/
+    min-height:400px;
 }
 
 a
