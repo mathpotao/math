@@ -6,22 +6,27 @@ body
 p
 {
     color:black;
-    font-size:16px;
+    font-size:medium;
     margin-left : 25px;
+}
+
+.MathJax 
+{
+    font-size: 1.3em;
 }
 
 h1
 {
-    color:red;
-    text-align:left;
+    color:white;
+    text-align:center;
     font-weight:bold;
-    font-size:22px;
+    font-size:30px;
 }
 
 
 h2
 {
-    color:#b85c00;
+    color:#873600;
     text-align:left;
     font-weight:bold;
     font-size:19px;
@@ -54,9 +59,9 @@ h5
 
 h6
 {
-    color:green;
-    text-align:left;
-    font-size:18px;
+    color:white;
+    text-align:center;
+    font-size:14px;
 }
 
 ul
@@ -72,12 +77,20 @@ header
     border-radius:4px;
     padding:4px 4px 4px 4px;
     margin-bottom:10px;
-    font-size:40px;
+    /*font-size:40px;*/
     font-weight:bold;
     text-align:center;
     min-width:700px;
     color:white;
 }
+
+.header1
+{
+    font-size:40px;
+    text-align:center;
+    color:white;
+}
+
 
 footer
 {
@@ -86,10 +99,17 @@ footer
     border-radius:4px;
     padding:4px 4px 4px 4px;
     margin-bottom:10px;
-    font-size:16px;
+    /*font-size:16px;*/
     text-align:center;
     min-width:700px;
     color:white;
+}
+
+.footer1
+{
+    color:white;
+    font-size:16px;
+    text-align:center;
 }
 
 nav
