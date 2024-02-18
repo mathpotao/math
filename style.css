@@ -1,0 +1,185 @@
+body
+{
+    font-family:Arial,Helvetica,FreeSans,sans-serif;
+    width:auto;
+    height:auto;
+}
+
+header
+{
+    background:#aaa;
+    border:2px black solid;
+    border-radius:4px;
+    padding:4px 4px 4px 4px;
+    margin-bottom:10px;
+    font-weight:bold;
+    text-align:center;
+    color:white;
+    width:auto;
+    font-size:140%;
+}
+
+footer
+{
+    background:#aaa;
+    border:2px black solid;
+    border-radius:4px;
+    padding:4px 4px 4px 4px;
+    margin-bottom:10px;
+    text-align:center;
+    color:white;
+    width:auto;
+    font-size:80%;
+}
+
+p
+{
+    margin-left: 15px;
+}
+
+form
+{
+    margin-left: 25px;
+}
+
+select
+{
+    color:red;
+    font-size: 110%;
+    min-width: 50px;
+}
+
+select:hover
+{
+    background-color: #ddfafc;
+}
+
+
+.menu 
+{
+    display: block;              /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+}
+
+.menu li 
+{
+    list-style-type: none ;       /* Suppression des puces */
+}
+
+.menu a 
+{
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: #1ABC9C;    /* Couleur d'arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+}
+
+.menu a:hover 
+{
+    background-color: #ff0000;
+    color: white;
+    border-color: #ffe843;
+}
+
+.non_fait
+{
+    color: yellow;    
+}
+
+.fait
+{
+    color: white;    
+}
+
+.def
+{
+    color:blue;
+}
+
+.exemple
+{
+    color:green;
+}
+
+.cours
+{
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: left;           /* Centrage du texte */   
+    background-color: #ccc;    /* Couleur d'arrière-plan */
+    color: #000;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+}
+
+.bouton1
+{
+    background-color:orange;
+    font-size: 100%;
+    margin-left: 15px;
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+}
+
+.bouton1:hover
+{
+    background-color: pink;
+}
+
+.bouton2
+{
+    background-color:black;
+    color:white;
+    font-size: 100%;
+    text-align: center;
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    margin-top: 15px;
+}
+
+.bouton2:hover
+{
+    background-color: brown;
+}
+
+.enonce
+{
+    margin-left: 20px;
+}
+
+.ic_rep
+{
+    float:left;
+}
+
+.juste
+{
+    color:green;
+}
+
+.juste2
+{
+    color:green;
+    font-size:100%;
+}
+
+.faux
+{
+    color:red;
+    font-size: 60%;
+}
+
+.faux2
+{
+    color:red;
+    font-size:100%;
+}

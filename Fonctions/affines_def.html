@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Fonctions affines</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_fonctions.js"></script>
+        <script src="script/script_affines_def.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
+    </head>
+
+    <header> <span class='header1'>Fonctions affines : définition et exemples</span> </header>
+
+    <body>     
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="fonctions.html">Fonctions
+                         </a> 
+                    </li>
+                    <li> <a href="affines.html">Fonctions affines
+                         </a> 
+                    </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+                    <p>
+                        <b class='def'>Définition (fonction affine) :</b> 
+                            Une fonction affine est une fonction définie sur $\Bbb R$ par : $f(x) = ax+b$
+                            avec $a$ et $b$ deux réels.
+                            Le réel $a$ s'appelle le coefficient directeur
+                            de $f$ et le réel $b$ s'appelle l'ordonnée à l'origine de $f$.
+                    </p>
+
+                    <p>
+                        <b class='exemple'>Exemple 1 :</b> 
+                            Soit $f$ la fonction affine définie par $f(x)=5x-7$. <br>
+                            Le coefficient directeur de $f$ est $5$ et 
+                            l'ordonnée à l'origine de $f$ est $-7$.
+                    </p>
+
+                    <p>
+                        <b class='exemple'>Exemple 2 :</b> 
+                            Soit $f$ la fonction affine définie par $f(x)=3-x$. <br>
+                            Le coefficient directeur de $f$ est $-1$ et 
+                            l'ordonnée à l'origine de $f$ est $3$.
+                    </p>
+
+                    <p> 
+                        <a href="affines_exercice1.html">
+                            <b class='note'>
+                                Exercice 1 :
+                            </b>
+                        </a>
+                    </p>
+                    <br>
+
+                
+                <br>
+                <br>
+                <a class="abas" href="affine_quiz.html" target="_blank"> Quiz</a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>
