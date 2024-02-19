@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css"/>
+        <script src="script/script_exo.js"></script>
+        <title>Signe</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
+    </head>
+
+    <header>Signe</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <b class='def'>Propriété (Tableau de signe) :</b> 
+                            Soit $f(x) = ax+b$. <br>
+                            Le tableau de signe de $f$ est : <br><br>
+                            <ul>
+                                <li>
+                                    si $a>0$ , c'est à dire si $a$ est positif :<br>
+                                    $
+                                        \begin{array}{|c|ccc|}
+                                            \hline
+                                            x           & - \infty  &      & -\frac{b}{a}     &              & + \infty \\
+                                            \hline
+                                            f(x)        &           & -    & 0              &    +         & \\
+                                            \hline
+                                        \end{array}
+                                    $
+                                </li>
+                                <br>
+                                <li>
+                                    si $a<0$ , c'est à dire si $a$ est négatif :<br>
+                                    $
+                                        \begin{array}{|c|ccc|}
+                                            \hline
+                                            x           & - \infty  &      & -\frac{b}{a}     &              & + \infty \\
+                                            \hline
+                                            f(x)        &           & +    & 0              &    -         & \\
+                                            \hline
+                                        \end{array}
+                                    $
+                                </li>
+                            </ul>
+                           
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 1 :</b> 
+                            Soit $f(x)=x-1$. <br>
+                            Le tableau de signe de $f$ est : <br>
+                                    $
+                                        \begin{array}{|c|ccc|}
+                                            \hline
+                                            x           & - \infty  &      & 1     &              & + \infty \\
+                                            \hline
+                                            f(x)        &           & -    & 0     &    +         & \\
+                                            \hline
+                                        \end{array}
+                                    $
+
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 2 :</b> 
+                            Soit $f(x)=2-x$. <br>
+                            Le tableau de signe de $f$ est : <br>
+                                    $
+                                        \begin{array}{|c|ccc|}
+                                            \hline
+                                            x           & - \infty  &      & 2     &              & + \infty \\
+                                            \hline
+                                            f(x)        &           & +    & 0     &    -         & \\
+                                            \hline
+                                        \end{array}
+                                    $
+
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="affines_exercice4.html">
+                    <script type='text/javascript' language='javascript'>fait('aff_exo4');</script>Exercices 4</span>
+                </a>
+            </li>
+            <li>
+                <a href="affines.html">Fonctions affines</a>
+            </li>
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>

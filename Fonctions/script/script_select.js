@@ -30,6 +30,7 @@ function verif1(id_select, id_span, k)
 function verif(nom_form, k)
 {
     l = tab[k].length;
+    alert(l);
     spm = document.forms[nom_form].querySelector(".spanmes");
     for (i = 0; i < l; i++)
     {

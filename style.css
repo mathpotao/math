@@ -16,7 +16,7 @@ header
     text-align:center;
     color:white;
     width:auto;
-    font-size:120%;
+    font-size:140%;
 }
 
 footer
@@ -91,7 +91,24 @@ select:hover
     display: block;          /* Transformation en flexbox */
     min-width: 50px;             /* Largeur minimale des liens */   
     margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
-    padding: 0.2rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    padding: 0.2rem 0.2rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: white;    /* Couleur d'arrière-plan */
+    color: #red;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.menu2 option
+{
+    display:block;                /* Transformation en block */
+    min-width: 50px;             /* Largeur minimale des liens */   
+    margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.2rem 0.2rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: center;           /* Centrage du texte */   
     background-color: white;    /* Couleur d'arrière-plan */
     color: #red;                  /* Couleur du texte */
@@ -100,21 +117,7 @@ select:hover
     border-radius: 4px;           /* Arrondis des bordures */
 }
 
-.menu2 option
-{
-    display:block;                /* Transformation en block */
-    min-width: 50px;             /* Largeur minimale des liens */   
-    margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
-    padding: 0.2rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
-    text-align: left;           /* Centrage du texte */   
-    background-color: white;    /* Couleur d'arrière-plan */
-    color: #red;                  /* Couleur du texte */
-    text-decoration: none;        /* Suppression du soulignement */
-    border: 1px solid #fff;       /* Ajout d'une bordure */
-    border-radius: 4px;           /* Arrondis des bordures */
-}
-
-.menu2 option
+.menu2 option:hover
 {
     background-color:#fdf1b8;
 }
@@ -217,4 +220,57 @@ select:hover
 {
     color:red;
     font-size:100%;
+}
+
+table 
+{
+    border: medium solid black;
+    border-collapse: collapse;
+    border-color: black;
+    width: auto;
+    margin-left:5px;
+    box-shadow:6px 6px 4px #666;
+}
+
+th
+{
+    font-family: arial;
+    border: 2px solid black;
+    border-color: black;
+    color:black;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    /*background-color: #1A8BBF;*/
+    background-color:white;
+    font-size:100%;
+    text-align: center;
+    /*max-width:300px;*/
+}
+
+td 
+{
+    font-family: sans-serif;
+    border-bottom: 2px solid black;
+    border-color: black;;
+    color:black;
+    width: auto;
+    max-width: 750px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    font-size:100%;
+    background-color: white;
+    /*max-width: 400px;*/
+}
+
+.carB
+{
+    background-color: white;
+    color:black;
+    font-size:20px;
+    width:40px;
+    height:30px;
+    text-align: center;
+    border: none;
+    margin: 0px;
+    padding:0px;
 }

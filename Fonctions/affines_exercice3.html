@@ -3,10 +3,11 @@
 
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="../style/style.css" />
-        <script src="../style/scriptfooter.js"></script>
-        <script src="script/script_affines_ex3.js"></script>
-        <script src="script/script_affines.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercice3</title>
+        <link rel="stylesheet" href="../style.css" />
+        <script src="script/script_affines_exercice3.js"></script>
+        <script src="script/script_select.js"></script>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
@@ -19,130 +20,115 @@
         </script>
     </head>
 
-    <header class="exo">Exercice 3</header>
+    <header>Exercice 3</header>
 
     <body>
-
-        <title>Exercice 3</title>
-
-        <nav>
-            <h2>Liens :</h2>
-                <ul>
-                    <li> <a href="affines.html">Fonctions affines</a> </li>
-                </ul>
-            <h2>Exercices :</h2>
-                <ul>
-                    <span id='nf'></span>
-                    <script type='text/javascript' language='javascript'>fait();</script>
-                </ul>
-        </nav>
-
-        <section class="sexo">
-
-                <p class='enonce'>
-                    <b>1.</b> Soit $f$ la fonction affine définie par $f(x) = -4x+20$.<br>
-                </p>
-                <p>
-                    <form name="saisie_1">
-                        &emsp; <label class="saisie">La racine de $f$ est :</label>
-                        <select id="s1" name="n1" class="sel4" width='5'>
-                            <option selected="selected">-20</option>
-                            <option>-10</option>
-                            <option>-5</option>
-                            <option>-4</option>
-                            <option>-1</option>
-                            <option>0</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>10</option>
-                            <option>20</option>
-                            <option>80</option>
-                        </select>
-                    </form>
-                </p>
-               
-                <br>
-
-                <p class='enonce'>
-                    <b>2.</b> Soit $f$ la fonction affine définie par $f(x) = 11-x$.<br>
-                </p>
-                <p>
-                    <form name="saisie_2">
-                        &emsp; <label class="saisie">La racine de $f$ est :</label>
-                        <select id="s2" name="n2" class="sel4" width='5'>
-                            <option selected="selected">-11</option>
-                            <option>-10</option>
-                            <option>-5</option>
-                            <option>-4</option>
-                            <option>-1</option>
-                            <option>0</option>
-                            <option>1</option>
-                            <option>5</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>22</option>
-                        </select>
-                    </form>
-                </p>
-                
-                <br>
-
-                <p class='enonce'>
-                    <b>3.</b> Soit $f$ la fonction affine définie par $f(x) = 1.5x-7.5$.<br>
-                </p>
-                <p>
-                    <form name="saisie_3">
-                        &emsp; <label class="saisie">La racine de $f$ est :</label>
-                        <select id="s3" name="n3" class="sel4" width='5'>
-                            <option selected="selected">-7.5</option>
-                            <option>-5</option>
-                            <option>-3</option>
-                            <option>-1.5</option>
-                            <option>-1</option>
-                            <option>0</option>
-                            <option>1.5</option>
-                            <option>3</option>
-                            <option>5</option>
-                            <option>7.5</option>
-                            <option>10</option>
-                        </select>
-                    </form>
-                </p>
-
-                <br>
-
-                <p class='enonce'>
-                    <b>4.</b> Soit $f$ la fonction affine définie par $f(x) = -3x$.<br>
-                </p>
-                <p>
-                    <form name="saisie_4">
-                        &emsp; <label class="saisie">La racine de $f$ est :</label>
-                        <select id="s4" name="n4" class="sel4" width='5'>
-                            <option selected="selected">-6</option>
-                            <option>-4</option>
-                            <option>-3</option>
-                            <option>-1.5</option>
-                            <option>-1</option>
-                            <option>0</option>
-                            <option>1.5</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>6</option>
-                            <option>12</option>
-                        </select>
-                    </form>
-                </p>
+<ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b>1.</b> Soit $f(x) = -4x+20$.<br>
                     
-                <br><br><br>
-                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif()" />
-                <br><br>
-                <span class="reponse" name="reponse"> </span>
-                <br><br>
-        </section>
+                        
+                        <form name="s1">
+
+                            <span id='sp1' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La racine de $f$ est :
+                                <span id='se1'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se1',0);</script>
+                            </div>
+
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s1', 0)" />
+                            <span class="spanmes"></span>
+
+                        </form>
+                    </p>
+
+                    <p>
+
+                        <b>2.</b> Soit $f(x) = 11-x$.<br>
+                    
+                        
+                        <form name="s2">
+
+                            <span id='sp2' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La racine de $f$ est :
+                                <span id='se2'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se2',1);</script>
+                            </div>
+                                              
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s2', 1)" />
+                            <span class="spanmes"></span>
+                            
+                        </form>
+
+                    </p>
+
+                    <p>
+
+                        <b>3.</b> Soit $f(x) = 1.5x-7.5$.<br>
+                    
+                        
+                        <form name="s3">
+
+                            <span id='sp3' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La racine de $f$ est :
+                                <span id='se3'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se3',2);</script>
+                            </div>
+                       
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s3', 2)" />
+                            <span class="spanmes"></span>
+                            
+                        </form>
+
+                    </p>
+
+                    <p>
+
+                        <b>4.</b> Soit $f(x) = -3x$.<br>
+                    
+                        
+                        <form name="s4">
+
+                            <span id='sp4' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La racine de $f$ est :
+                                <span id='se4'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se4',3);</script>
+                            </div>
+                        
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s4', 3)" />
+                            <span class="spanmes"></span>
+                            
+                        </form>
+
+                    </p>
+
+                    <p>
+                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('aff_exo3',4)" />
+                        <span class="span_exo"></span>
+                    </p>
+
+                </div>
+            </li>
+
+            <li>
+                <a href="affines_racine.html">Racine</a>
+            </li>
+
+            <li>
+                <a href="affines.html">Fonctions affines</a>
+            </li>
+
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
     </body>
 
-    <footer class="exo"> 
-        <script type='text/javascript' language='javascript'>pied();</script>
-    </footer>
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
 
 </html>

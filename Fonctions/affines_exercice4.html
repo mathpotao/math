@@ -3,10 +3,11 @@
 
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="../style/style.css" />
-        <script src="../style/scriptfooter.js"></script>
-        <script src="script/script_affines_ex4.js"></script>
-        <script src="script/script_affines.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercice4</title>
+        <link rel="stylesheet" href="../style.css" />
+        <script src="script/script_affines_exercice4.js"></script>
+        <script src="script/script_select.js"></script>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
@@ -19,192 +20,78 @@
         </script>
     </head>
 
-    <header class="exo"><h1>Exercice 4</h1></header>
+    <header>Exercice 4</header>
 
     <body>
+<ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p class='enonce'>
+                        <b>1.</b> Soit $f(x) = -3x+12$.<br>
+                    </p>
+                    <p>
+                        <form name="s1">
+                            <span id='sp1' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                Compléter le tableau de signe :<br><br>
+                                <table>
+                                    <tr>
+                                        <th>$x$</th>
+                                        <td>$-\infty$</td>
+                                        <td></td>
+                                        <td>
+                                            <span id='se1'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se1',1);</script>
+                                        </td>
+                                        <td></td>
+                                        <td>$+\infty$</td>
+                                    </tr>
+                                    <tr>
+                                        <th>$f(x)$</th>
+                                        <td></td>
+                                        <td>
+                                            <span id='se2'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se2',0);</script>
+                                        </td>
+                                        <td>$0$</td>
+                                        <td>
+                                            <span id='se3'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se3',0);</script>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
 
-        <title>Exercice 4</title>
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s1', 0)" />
+                            <span class="spanmes"></span>
+                           
+                        </form>
+                    </p>
 
-        <nav>
-            <h2>Liens :</h2>
-                <ul>
-                    <li> <a href="affines.html">Fonctions affines</a> </li>
-                </ul>
-            <h2>Exercices :</h2>
-                <ul>
-                    <span id='nf'></span>
-                    <script type='text/javascript' language='javascript'>fait();</script>
-                </ul>
-        </nav>
+                    <br>
 
-        <section class="sexo">
+                    <p>
+                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('aff_exo3',4)" />
+                        <span class="span_exo"></span>
+                    </p>
 
-                <p class='enonce'>
-                    <b>1.</b> Soit $f$ la fonction affine définie par $f(x) = -3x+12$.<br>
-                </p>
-                <p>
-                    <form name="saisie_1">
-                        <span class="spanquiz"> &emsp; </span>
-                        <label class="saisie">Compléter le tableau de signe de $f$ :</label><br><br>
-                        <table>
-                            <tr>
-                                <th>$x$</th>
-                                <td>$-\infty$</td>
-                                <td></td>
-                                <td>
-                                    <input type="text" class="carB" id="r1" name="in" autocomplete="off" value='' />
-                                </td>
-                                <td></td>
-                                <td>$+\infty$</td>
-                            </tr>
-                            <tr>
-                                <th>$f(x)$</th>
-                                <td></td>
-                                <td>
-                                    <input type="text" class="carB" id="sg1" name="in" autocomplete="off" value=''/>
-                                </td>
-                                <td>$0$</td>
-                                <td>
-                                    <input type="text" class="carB" id="sd1" name="in" autocomplete="off" value='' />
-                                </td>
-                                <td></td>
-                            </tr>
-                        </table>
-                        <br>
-                         &emsp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1',0)" />
-                        <span class="spanmes"></span>
-                    </form>
-                </p>
+                </div>
+            </li>
 
-                <br>
+            <li>
+                <a href="affines_racine.html">Racine</a>
+            </li>
 
-                <p class='enonce'>
-                    <b>1.</b> Soit $f$ la fonction affine définie par $f(x) = 5x+5$.<br>
-                </p>
-                <p>
-                    <form name="saisie_2">
-                        <span class="spanquiz"> &emsp; </span>
-                        <label class="saisie">Compléter le tableau de signe de $f$ :</label><br><br>
-                        <table>
-                            <tr>
-                                <th>$x$</th>
-                                <td>$-\infty$</td>
-                                <td></td>
-                                <td>
-                                    <input type="text" class="carB" id="r1" name="in" autocomplete="off" value='' />
-                                </td>
-                                <td></td>
-                                <td>$+\infty$</td>
-                            </tr>
-                            <tr>
-                                <th>$f(x)$</th>
-                                <td></td>
-                                <td>
-                                    <input type="text" class="carB" id="sg1" name="in" autocomplete="off" value=''/>
-                                </td>
-                                <td>$0$</td>
-                                <td>
-                                    <input type="text" class="carB" id="sd1" name="in" autocomplete="off" value='' />
-                                </td>
-                                <td></td>
-                            </tr>
-                        </table>
-                        <br>
-                         &emsp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_2',1)" />
-                        <span class="spanmes"></span>
-                    </form>
-                </p>
+            <li>
+                <a href="affines.html">Fonctions affines</a>
+            </li>
 
-                <br>
-
-                <p class='enonce'>
-                    <b>1.</b> Soit $f$ la fonction affine définie par $f(x) = -3x+21$.<br>
-                </p>
-                <p>
-                    <form name="saisie_3">
-                        <span class="spanquiz"> &emsp; </span>
-                        <label class="saisie">Compléter le tableau de signe de $f$ :</label><br><br>
-                        <table>
-                            <tr>
-                                <th>$x$</th>
-                                <td>$-\infty$</td>
-                                <td></td>
-                                <td>
-                                    <input type="text" class="carB" id="r1" name="in" autocomplete="off" value='' />
-                                </td>
-                                <td></td>
-                                <td>$+\infty$</td>
-                            </tr>
-                            <tr>
-                                <th>$f(x)$</th>
-                                <td></td>
-                                <td>
-                                    <input type="text" class="carB" id="sg1" name="in" autocomplete="off" value=''/>
-                                </td>
-                                <td>$0$</td>
-                                <td>
-                                    <input type="text" class="carB" id="sd1" name="in" autocomplete="off" value='' />
-                                </td>
-                                <td></td>
-                            </tr>
-                        </table>
-                        <br>
-                         &emsp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_3',2)" />
-                        <span class="spanmes"></span>
-                    </form>
-                </p>
-
-                <br>
-
-                <p class='enonce'>
-                    <b>1.</b> Soit $f$ la fonction affine définie par $f(x) = x$.<br>
-                </p>
-                <p>
-                    <form name="saisie_4">
-                        <span class="spanquiz"> &emsp; </span>
-                        <label class="saisie">Compléter le tableau de signe de $f$ :</label><br><br>
-                        <table>
-                            <tr>
-                                <th>$x$</th>
-                                <td>$-\infty$</td>
-                                <td></td>
-                                <td>
-                                    <input type="text" class="carB" id="r1" name="in" autocomplete="off" value='' />
-                                </td>
-                                <td></td>
-                                <td>$+\infty$</td>
-                            </tr>
-                            <tr>
-                                <th>$f(x)$</th>
-                                <td></td>
-                                <td>
-                                    <input type="text" class="carB" id="sg1" name="in" autocomplete="off" value=''/>
-                                </td>
-                                <td>$0$</td>
-                                <td>
-                                    <input type="text" class="carB" id="sd1" name="in" autocomplete="off" value='' />
-                                </td>
-                                <td></td>
-                            </tr>
-                        </table>
-                        <br>
-                         &emsp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_4',3)" />
-                        <span class="spanmes"></span>
-                    </form>
-                </p>
-                
-
-                    
-                <br><br><br>
-                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(4)" />
-                <br><br>
-                <span class="reponse" name="reponse"> </span>
-                <br><br>
-        </section>
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
     </body>
 
-    <footer class="exo"> 
-        <script type='text/javascript' language='javascript'>pied();</script>
-    </footer>
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
 
 </html>
