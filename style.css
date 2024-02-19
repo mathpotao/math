@@ -89,7 +89,7 @@ select:hover
 .menu2 
 {
     display: block;          /* Transformation en flexbox */
-    min-width: 50px;             /* Largeur minimale des liens */   
+    min-width: 40px;             /* Largeur minimale des liens */   
     margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.2rem 0.2rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: center;           /* Centrage du texte */   
@@ -106,7 +106,7 @@ select:hover
 .menu2 option
 {
     display:block;                /* Transformation en block */
-    min-width: 50px;             /* Largeur minimale des liens */   
+    min-width: 40px;             /* Largeur minimale des liens */   
     margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.2rem 0.2rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: center;           /* Centrage du texte */   
@@ -228,7 +228,7 @@ table
     border-collapse: collapse;
     border-color: black;
     width: auto;
-    margin-left:5px;
+    margin-left:1px;
     box-shadow:6px 6px 4px #666;
 }
 
@@ -239,12 +239,11 @@ th
     border-color: black;
     color:black;
     width: auto;
-    padding: 5px 10px 5px 10px;
+    padding: 2px 2px 2px 2px;
     /*background-color: #1A8BBF;*/
     background-color:white;
     font-size:100%;
     text-align: center;
-    /*max-width:300px;*/
 }
 
 td 
@@ -254,8 +253,7 @@ td
     border-color: black;;
     color:black;
     width: auto;
-    max-width: 750px;
-    padding: 5px 10px 5px 10px;
+    padding: 2px 2px 2px 2px;
     text-align: center;
     font-size:100%;
     background-color: white;
