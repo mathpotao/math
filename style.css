@@ -34,24 +34,23 @@ footer
 
 p
 {
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 form
 {
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 select
 {
     color:red;
-    font-size: 110%;
     min-width: 50px;
 }
 
 select:hover
 {
-    background-color: #ddfafc;
+    background-color: #fdf1b8;
 }
 
 
@@ -70,7 +69,7 @@ select:hover
 {
     display:block;                /* Transformation en block */
     min-width: 120px;             /* Largeur minimale des liens */   
-    margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+    margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: center;           /* Centrage du texte */   
     background-color: #1ABC9C;    /* Couleur d'arrière-plan */
@@ -111,7 +110,7 @@ select:hover
 {
     display:block;                /* Transformation en block */
     min-width: 120px;             /* Largeur minimale des liens */   
-    margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+    margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: left;           /* Centrage du texte */   
     background-color: #ccc;    /* Couleur d'arrière-plan */
