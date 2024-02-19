@@ -16,7 +16,7 @@ header
     text-align:center;
     color:white;
     width:auto;
-    font-size:140%;
+    font-size:120%;
 }
 
 footer
@@ -160,7 +160,7 @@ select:hover
     margin-left: 15px;
     border: 1px solid #fff;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
-    margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
+    margin: 10px 20px;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.5rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
 }
 
