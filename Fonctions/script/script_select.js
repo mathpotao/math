@@ -1,7 +1,7 @@
 function afficher_select(id_select, k)
 {
     l = prop[k].length;
-    aff = '<select id="'+ id_select +'l" name="n1" width="5">';
+    aff = '<select class="menu2" id="'+ id_select +'l" name="n1" width="5">';
     aff = aff + '<option selected="selected"></option>';
     for (var i = 0; i < l; i++)
     {

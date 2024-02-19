@@ -46,13 +46,13 @@ select
 {
     color:red;
     min-width: 50px;
+    font-size:105%;
 }
 
 select:hover
 {
     background-color: #fdf1b8;
 }
-
 
 .menu 
 {
@@ -84,6 +84,39 @@ select:hover
     background-color: #ff0000;
     color: white;
     border-color: #ffe843;
+}
+
+.menu2 
+{
+    display: inline-flex;          /* Transformation en flexbox */
+    min-width: 50px;             /* Largeur minimale des liens */   
+    margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.2rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: white;    /* Couleur d'arrière-plan */
+    color: #red;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+}
+
+.menu2 option
+{
+    display:flex;                /* Transformation en block */
+    min-width: 50px;             /* Largeur minimale des liens */   
+    margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.2rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: white;    /* Couleur d'arrière-plan */
+    color: #red;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+}
+
+.menu2 option
+{
+    background-color:#fdf1b8;
 }
 
 .non_fait
