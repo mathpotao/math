@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html translate='no'>
 
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exercice4</title>
+        <title>Exercice5</title>
         <link rel="stylesheet" href="../style.css" />
-        <script src="script/script_affines_exercice4.js"></script>
+        <script src="script/script_affines_exercice5.js"></script>
         <script src="script/script_select.js"></script>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
@@ -20,99 +20,96 @@
         </script>
     </head>
 
-    <header>Exercice 4</header>
+    <header>Exercice 5</header>
 
     <body>
-<ul class="menu">
+        <ul class="menu">
             <li>
                 <div class='cours'>
                     <p>
-                        <b>1.</b> Soit $f(x) = -3x+12$.<br>
-                   
+                        <b>1. </b>Soit le graphique suivant.<br><br>
+                                <img src="images/affines_exo5.png"/>
                         <form name="s1">
+
                             <span id='sp1' class='ic_rep'> &emsp; </span>
                             <div class='enonce'>
-                                Compléter le tableau de signe :<br><br>
-                                <table>
-                                    <tr>
-                                        <th>$x$</th>
-                                        <td>$-\infty$</td>
-                                        <td></td>
-                                        <td>
-                                            <span id='se1'></span>
-                                            <script type='text/javascript' language='javascript'>afficher_select('se1',1);</script>
-                                        </td>
-                                        <td></td>
-                                        <td>$+\infty$</td>
-                                    </tr>
-                                    <tr>
-                                        <th>$f(x)$</th>
-                                        <td></td>
-                                        <td>
-                                            <span id='se2'></span>
-                                            <script type='text/javascript' language='javascript'>afficher_select('se2',0);</script>
-                                        </td>
-                                        <td>$0$</td>
-                                        <td>
-                                            <span id='se3'></span>
-                                            <script type='text/javascript' language='javascript'>afficher_select('se3',0);</script>
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                </table>
+                                Le coefficient directeur de $f$ est :
+                                <span id='se1'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se1',0);</script>
                             </div>
-
-                            <input class="bouton1" type="button" value="Valider" onClick="verif2('s1','sp1', 0)" />
-                            <span class="spanmes"></span>
-                           
-                        </form>
-                    </p>
-
-                    <p>
-                        <b>2.</b> Soit $f(x) = 6x+15$.<br>
-                   
-                        <form name="s2">
+                       
                             <span id='sp2' class='ic_rep'> &emsp; </span>
                             <div class='enonce'>
-                                Compléter le tableau de signe :<br><br>
-                                <table>
-                                    <tr>
-                                        <th>$x$</th>
-                                        <td>$-\infty$</td>
-                                        <td></td>
-                                        <td>
-                                            <span id='se4'></span>
-                                            <script type='text/javascript' language='javascript'>afficher_select('se4',2);</script>
-                                        </td>
-                                        <td></td>
-                                        <td>$+\infty$</td>
-                                    </tr>
-                                    <tr>
-                                        <th>$f(x)$</th>
-                                        <td></td>
-                                        <td>
-                                            <span id='se5'></span>
-                                            <script type='text/javascript' language='javascript'>afficher_select('se5',0);</script>
-                                        </td>
-                                        <td>$0$</td>
-                                        <td>
-                                            <span id='se6'></span>
-                                            <script type='text/javascript' language='javascript'>afficher_select('se6',0);</script>
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                </table>
+                                L'ordonnée à l'origine de $f$ est : &nbsp;
+                                <span id='se2'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se2',0);</script>
                             </div>
 
-                            <input class="bouton1" type="button" value="Valider" onClick="verif2('s2','sp2', 1)" />
+                            <span id='sp3' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                Le coefficient directeur de $g$ est :
+                                <span id='se3'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se3',1);</script>
+                            </div>
+                       
+                            <span id='sp4' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                L'ordonnée à l'origine de $f$ est : &nbsp;
+                                <span id='se4'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se4',1);</script>
+                            </div>
+
+                        
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s1', 0)" />
                             <span class="spanmes"></span>
-                           
+
                         </form>
                     </p>
 
+                    <p>
+                        <b>2. </b>Soit le graphique suivant.<br><br>
+                                <img src="images/affines_exo5_2.png"/>
+                        <form name="s2">
+
+                            <span id='sp5' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                Le coefficient directeur de $f$ est :
+                                <span id='se5'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se5',2);</script>
+                            </div>
+                       
+                            <span id='sp6' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                L'ordonnée à l'origine de $f$ est : &nbsp;
+                                <span id='se6'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se6',2);</script>
+                            </div>
+
+                            <span id='sp7' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                Le coefficient directeur de $g$ est :
+                                <span id='se7'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se7',3);</script>
+                            </div>
+                       
+                            <span id='sp8' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                L'ordonnée à l'origine de $f$ est : &nbsp;
+                                <span id='se8'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se8',3);</script>
+                            </div>
+
+                        
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s2', 1)" />
+                            <span class="spanmes"></span>
+
+                        </form>
+                    </p>
+                    
+
 
                     <p>
-                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('aff_exo4',2)" />
+                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('aff_exo5',8)" />
                         <span class="span_exo"></span>
                     </p>
 
@@ -120,7 +117,7 @@
             </li>
 
             <li>
-                <a href="affines_racine.html">Racine</a>
+                <a href="affines_droite.html">Droite</a>
             </li>
 
             <li>

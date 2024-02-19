@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html translate='no'>
 
-    <head>
+    <head translate='no'>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" translate='no'>
         <title>Exercice4</title>
         <link rel="stylesheet" href="../style.css" />
         <script src="script/script_affines_exercice4.js"></script>
@@ -23,7 +23,7 @@
     <header>Exercice 4</header>
 
     <body>
-<ul class="menu">
+        <ul class="menu">
             <li>
                 <div class='cours'>
                     <p>
@@ -110,9 +110,51 @@
                         </form>
                     </p>
 
+                    <p>
+                        <b>2.</b> Soit $f(x) = -x$.<br>
+                   
+                        <form name="s3">
+                            <span id='sp3' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                Compléter le tableau de signe :<br><br>
+                                <table>
+                                    <tr>
+                                        <th>$x$</th>
+                                        <td>$-\infty$</td>
+                                        <td></td>
+                                        <td>
+                                            <span id='se7'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se7',3);</script>
+                                        </td>
+                                        <td></td>
+                                        <td>$+\infty$</td>
+                                    </tr>
+                                    <tr>
+                                        <th>$f(x)$</th>
+                                        <td></td>
+                                        <td>
+                                            <span id='se8'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se8',0);</script>
+                                        </td>
+                                        <td>$0$</td>
+                                        <td>
+                                            <span id='se9'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se9',0);</script>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <input class="bouton1" type="button" value="Valider" onClick="verif2('s3','sp3', 2)" />
+                            <span class="spanmes"></span>
+                           
+                        </form>
+                    </p>
+
 
                     <p>
-                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('aff_exo4',2)" />
+                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('aff_exo4',3)" />
                         <span class="span_exo"></span>
                     </p>
 
@@ -120,7 +162,7 @@
             </li>
 
             <li>
-                <a href="affines_racine.html">Racine</a>
+                <a href="affines_signe.html">Signe</a>
             </li>
 
             <li>
@@ -130,6 +172,7 @@
             <li>
                 <a href="../index.html">Accueil</a>
             </li>
+        </ul>
     </body>
 
     <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
