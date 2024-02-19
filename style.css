@@ -47,6 +47,8 @@ select
     color:red;
     min-width: 50px;
     font-size:105%;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 select:hover
@@ -115,6 +117,8 @@ select:hover
     text-decoration: none;        /* Suppression du soulignement */
     border: 1px solid #fff;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .menu2 option:hover
