@@ -56,7 +56,7 @@ function verif2(nom_form, id_span, k)
     for (i = 0; i < l; i++)
     {
         reponse =  document.getElementById(tab[k][i]).value;
-        if (reponse == rep[i])
+        if (reponse == rep[k][i])
         {
             somme_juste++;
         }
