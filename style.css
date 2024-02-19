@@ -1,3 +1,6 @@
+@media screen and (max-width: 1200px) {
+
+
 body
 {
     font-family:Arial,Helvetica,FreeSans,sans-serif;
@@ -86,6 +89,12 @@ select:hover
     background-color: #ff0000;
     color: white;
     border-color: #ffe843;
+}
+
+.parent
+{
+    color:#dddddd;
+    font-weight: bold  ;
 }
 
 .menu2 
@@ -196,6 +205,12 @@ select:hover
 .enonce
 {
     margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.question
+{
+    margin-left: 40px;
 }
 
 .ic_rep
@@ -275,4 +290,6 @@ td
     border: none;
     margin: 0px;
     padding:0px;
+}
+
 }
