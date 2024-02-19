@@ -30,7 +30,6 @@ function verif1(id_select, id_span, k)
 function verif(nom_form, k)
 {
     l = tab[k].length;
-    alert(l);
     spm = document.forms[nom_form].querySelector(".spanmes");
     for (i = 0; i < l; i++)
     {
@@ -44,6 +43,32 @@ function verif(nom_form, k)
     }
     else
     {
+        spm.innerHTML = "<b class='faux2'>Non validé.</b>";
+    }
+}
+
+function verif2(nom_form, id_span, k)
+{
+    l = tab[k].length;
+    spm = document.forms[nom_form].querySelector(".spanmes");
+    span_ic = document.getElementById(id_span);
+    somme_juste = 0;
+    for (i = 0; i < l; i++)
+    {
+        reponse =  document.getElementById(tab[k][i]).value;
+        if (reponse == rep[i])
+        {
+            somme_juste++;
+        }
+    }
+    if (somme_juste == l)
+    {
+        span_ic.innerHTML = "<b class='juste'>&#10004;</b>";
+        spm.innerHTML = "<b class='juste2'>Validé.</b>";
+    }
+    else
+    {
+        span_ic.innerHTML = "<b class='faux'>&#10060;</b>";
         spm.innerHTML = "<b class='faux2'>Non validé.</b>";
     }
 }
