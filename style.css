@@ -88,7 +88,7 @@ select:hover
 
 .menu2 
 {
-    display: inline-flex;          /* Transformation en flexbox */
+    display: block;          /* Transformation en flexbox */
     min-width: 50px;             /* Largeur minimale des liens */   
     margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.2rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
@@ -102,7 +102,7 @@ select:hover
 
 .menu2 option
 {
-    display:flex;                /* Transformation en block */
+    display:block;                /* Transformation en block */
     min-width: 50px;             /* Largeur minimale des liens */   
     margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.2rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
