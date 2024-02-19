@@ -33,7 +33,7 @@ function verif(nom_form, k)
     spm = document.forms[nom_form].querySelector(".spanmes");
     for (i = 0; i < l; i++)
     {
-        verif1(tab[k][i][0], tab[k][i][1], i + 2 * k);
+        verif1(tab[k][i][0], tab[k][i][1], i + k * l );
     }
     tab_juste = document.forms[nom_form].querySelectorAll(".juste");
     somme_juste = tab_juste.length;
@@ -64,9 +64,4 @@ function verif_exo(chaine, n)
     {
         m.innerHTML = "<b class='faux2'>Exercice non validé.</b>";
     }
-}
-
-function fait()
-{
-    
 }
