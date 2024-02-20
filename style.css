@@ -1,6 +1,3 @@
-@media screen and (max-width: 1200px) {
-
-
 body
 {
     font-family:Arial,Helvetica,FreeSans,sans-serif;
@@ -61,8 +58,8 @@ select:hover
 
 .menu 
 {
-    display: block;              /* Transformation en flexbox */
-    padding:0;                  /* Suppression des marges internes */
+    display: block;              
+    padding:0;             
 }
 
 .menu li 
@@ -78,7 +75,7 @@ select:hover
     padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: center;           /* Centrage du texte */   
     background-color: #1ABC9C;    /* Couleur d'arrière-plan */
-    color: #fff;                  /* Couleur du texte */
+    color: white;                  /* Couleur du texte */
     text-decoration: none;        /* Suppression du soulignement */
     border: 1px solid #fff;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
@@ -208,6 +205,12 @@ select:hover
     margin-bottom: 10px;
 }
 
+.quiz
+{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
 .question
 {
     margin-left: 40px;
@@ -292,4 +295,11 @@ td
     padding:0px;
 }
 
+
+@media screen and (min-width: 640px) {
+    
+   .menu a 
+    {
+        background-color:lightblue;
+    }
 }

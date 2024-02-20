@@ -8,7 +8,6 @@
         <title>Quiz</title>
         <link rel="stylesheet" href="../../style.css" />
         <script src="script/script_affines_quiz.js"></script>
-        <script src="../../script/script_quiz.js"></script>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
@@ -21,7 +20,7 @@
         </script>
     </head>
 
-    <header>Quiz</header>
+    <header class="quizz">Quiz</header>
 
     <body>
         
@@ -90,8 +89,8 @@
                     </p>
 
                     <p>
-                        <input class="bouton2" type="button" value="Valider le quiz" onClick="verification('affines_quiz', 6)" />
-                        <span id='message' class="span_exo"></span>
+                        <input class="bouton2" type="button" value="Valider le quiz" onClick="verification(6)" />
+                        <span class="span_exo"></span>
                     </p>
 
                 </div>

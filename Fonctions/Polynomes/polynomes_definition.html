@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../style.css"/>
         <script src="../../script/script_exo.js"></script>
-        <title>Racine</title>
+        <title>Définition</title>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
@@ -20,7 +20,7 @@
 
     </head>
 
-    <header>Racine</header>
+    <header>Définition</header>
 
     <body>
         <ul class="menu">
@@ -28,38 +28,37 @@
                 <div class='cours'>
                     <p>
                         <b class='def'>Définition :</b>
-                        Soit $f$ une fonction affine. 
-                        La racine de $f$ est le réel qui annule la fonction.
+                        Une fonction polynôme $f$ est définie sur &#8477; par :<br>
+                        $f(x)=a_n x^n+a_{n-1} + x^{n-1}+...+a_1 x + a_0 $,<br> 
+                        avec $a_n$, ... , $a_0$ des réels tels que $a_n \neq 0$.<br>
+                        $n$ s'appelle <b>le degré du polynôme</b>.
                     </p>
                     <p>
                         <b class='exemple'>Exemple 1 :</b>
-                        Soit $f(x)=2x-4$.<br>
-                        La racine de $f$ est $2$.
+                        Soit $f(x)=3x^2-4x+1$.<br>
+                        $f$ est un polynôme de degré $2$.
                     </p>
                     <p>
                         <b class='exemple'>Exemple 2 :</b>
-                        Soit $f(x)=3+x$.<br>
-                        La racine de $f$ est $-3$.
+                        Soit $f(x)=x^5-2x^3+7$.<br>
+                        Le coefficient directeur est $-1$.<br>
+                        $f$ est un polynôme de degré $5$.
                     </p>
-                    <p>
-                        <b class='def'>Propriété :</b>
-                        Soit $f(x) = ax+b$ avec $a \neq 0$.<br>
-                        La racine de $f$ est : $-\frac{b}{a}$.
-                    </p>
-                    <p>
-                        <b class='exemple'>Exemple 3 :</b>
-                        Soit $f(x)=5x+3$.<br>
-                        La racine de $f$ est $-\frac{3}{5} = - 0.6$.
+                     <p>
+                        <b class='def'>Cas particuliers :</b><br>
+                        Un polynôme de degré $0$ est <b>une fonction constante</b>.<br>
+                        Un polynôme de degré $1$ est <b>une fonction affine</b>.<br>
+                        Un polynôme de degré $2$ s'appelle <b>un trinôme</b>.
                     </p>
                 </div>
             </li>
             <li>
-                <a href="affines_exercice3.html">
-                    <script type='text/javascript' language='javascript'>fait('aff_exo3');</script>Exercices 3</span>
+                <a href="affines_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('pol_exo1');</script>Exercices 1</span>
                 </a>
             </li>
             <li>
-                <a href="affines.html"><span class='parent'>Fonctions affines</span></a>
+                <a href="polynomes.html"><span class='parent'>Polynômes</span></a>
             </li>
             <li>
                 <a href="../../index.html"><span class='parent'>Accueil</span></a>

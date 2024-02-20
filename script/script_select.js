@@ -12,11 +12,11 @@ function afficher_select(id_select, k)
     span.innerHTML = aff;
 }
 
-function verif1(id_select, id_span, k)
+function verif1(id_select, id_span, i, j)
 {
     reponse =  document.getElementById(id_select).value;
     span_ic = document.getElementById(id_span);
-    if (reponse == rep[k])
+    if (reponse == rep[j][i])
     {
         span_ic.innerHTML = "<b class='juste'>&#10004;</b>";
     }
@@ -27,13 +27,13 @@ function verif1(id_select, id_span, k)
 }
 
 
-function verif(nom_form, k)
+function verif(nom_form, j)
 {
-    l = tab[k].length;
+    l = tab[j].length;
     spm = document.forms[nom_form].querySelector(".spanmes");
     for (i = 0; i < l; i++)
     {
-        verif1(tab[k][i][0], tab[k][i][1], i + k * l );
+        verif1(tab[j][i][0], tab[j][i][1], i, j);
     }
     tab_juste = document.forms[nom_form].querySelectorAll(".juste");
     somme_juste = tab_juste.length;
@@ -47,16 +47,16 @@ function verif(nom_form, k)
     }
 }
 
-function verif2(nom_form, id_span, k)
+function verif2(nom_form, id_span, j)
 {
-    l = tab[k].length;
+    l = tab[j].length;
     spm = document.forms[nom_form].querySelector(".spanmes");
     span_ic = document.getElementById(id_span);
     somme_juste = 0;
     for (i = 0; i < l; i++)
     {
-        reponse =  document.getElementById(tab[k][i]).value;
-        if (reponse == rep[k][i])
+        reponse =  document.getElementById(tab[j][i]).value;
+        if (reponse == rep[j][i])
         {
             somme_juste++;
         }
