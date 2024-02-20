@@ -47,7 +47,6 @@ function verification(chaine, nb)
         if (mauvais)
         {
             tab[question - 1].innerHTML = "<b class='faux'>&#10060;</b>";
-            init(question - 1);
         }
     }
     if (somme == nb)

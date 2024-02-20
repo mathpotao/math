@@ -90,7 +90,7 @@ select:hover
 
 .parent
 {
-    color:#dddddd;
+    color:#fdf1b8;
     font-weight: bold  ;
 }
 
@@ -173,7 +173,7 @@ select:hover
     margin-left: 15px;
     border: 1px solid #fff;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
-    margin: 10px 20px;               /* Marges externes (1 valeurs = 4 directions) */
+    margin: 5px 20px;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.5rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
 }
 
@@ -214,6 +214,7 @@ select:hover
 .question
 {
     margin-left: 40px;
+    margin-top: 10px;
 }
 
 .ic_rep
