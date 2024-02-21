@@ -4,10 +4,10 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exercice1</title>
-        <link rel="stylesheet" href="../../style.css" />
-        <script src="script/script_affines_definition_exercice1.js"></script>
-        <script src="../../script/script_select.js"></script>
+        <title>Exercice2</title>
+        <link rel="stylesheet" href="../../../style.css" />
+        <script src="script/script_trinomes_definition_exercice2.js"></script>
+        <script src="../../../script/script_select.js"></script>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
@@ -20,30 +20,37 @@
         </script>
     </head>
 
-    <header>Exercice 1</header>
+    <header>Exercice 2</header>
 
     <body>
         <ul class="menu">
             <li>
                 <div class='cours'>
                     <p>
-                        <b>1.</b> Soit $f(x) = -4x+3$.<br>
+                        <b>1.</b> Soit $f(x) = x^2-2x+5$.<br>
                     
                         
                         <form name="s1">
 
                             <span id='sp1' class='ic_rep'> &emsp; </span>
                             <div class='enonce'>
-                                Le coefficient directeur de $f$ est :
+                                $\alpha$ est égal à :
                                 <span id='se1'></span>
                                 <script type='text/javascript' language='javascript'>afficher_select('se1',0);</script>
                             </div>
                        
                             <span id='sp2' class='ic_rep'> &emsp; </span>
                             <div class='enonce'>
-                                L'ordonnée à l'origine de $f$ est :
+                                $\beta$ est égal à :
                                 <span id='se2'></span>
-                                <script type='text/javascript' language='javascript'>afficher_select('se2',0);</script>
+                                <script type='text/javascript' language='javascript'>afficher_select('se2',1);</script>
+                            </div>
+
+                            <span id='sp3' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La forme canonique est :
+                                <span id='se3'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se3',2);</script>
                             </div>
 
                         
@@ -54,94 +61,75 @@
                     </p>
 
                     <p>
-
-                        <b>2.</b> Soit $f(x) = 5-2x$.<br>
+                        <b>2.</b> Soit $f(x) = 2x^2+8x-6$.<br>
                     
                         
                         <form name="s2">
 
-                            <span id='sp3' class='ic_rep'> &emsp; </span>
-                            <div class='enonce'>
-                                Le coefficient directeur de $f$ est :
-                                <span id='se3'></span>
-                                <script type='text/javascript' language='javascript'>afficher_select('se3',1);</script>
-                            </div>
-                       
                             <span id='sp4' class='ic_rep'> &emsp; </span>
                             <div class='enonce'>
-                                L'ordonnée à l'origine de $f$ est :
+                                $\alpha$ est égal à :
                                 <span id='se4'></span>
-                                <script type='text/javascript' language='javascript'>afficher_select('se4',1);</script>
+                                <script type='text/javascript' language='javascript'>afficher_select('se4',3);</script>
+                            </div>
+                       
+                            <span id='sp5' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                $\beta$ est égal à :
+                                <span id='se5'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se5',4);</script>
+                            </div>
+
+                            <span id='sp6' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La forme canonique est :
+                                <span id='se6'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se6',5);</script>
                             </div>
 
                         
                             <input class="bouton1" type="button" value="Valider" onClick="verif('s2', 1)" />
                             <span class="spanmes"></span>
-                            
-                        </form>
 
+                        </form>
                     </p>
 
                     <p>
-
-                        <b>3.</b> Soit $f(x) = -x$.<br>
+                        <b>3.</b> Soit $f(x) = 3x^2-6x$.<br>
                     
                         
                         <form name="s3">
 
-                            <span id='sp5' class='ic_rep'> &emsp; </span>
+                            <span id='sp7' class='ic_rep'> &emsp; </span>
                             <div class='enonce'>
-                                Le coefficient directeur est :
-                                <span id='se5'></span>
-                                <script type='text/javascript' language='javascript'>afficher_select('se5',2);</script>
+                                $\alpha$ est égal à :
+                                <span id='se7'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se7',6);</script>
                             </div>
                        
-                            <span id='sp6' class='ic_rep'> &emsp; </span>
+                            <span id='sp8' class='ic_rep'> &emsp; </span>
                             <div class='enonce'>
-                                L'ordonnée à l'origine est :
-                                <span id='se6'></span>
-                                <script type='text/javascript' language='javascript'>afficher_select('se6',2);</script>
+                                $\beta$ est égal à :
+                                <span id='se8'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se8',7);</script>
+                            </div>
+
+                            <span id='sp9' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La forme canonique est :
+                                <span id='se9'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se9',8);</script>
                             </div>
 
                         
                             <input class="bouton1" type="button" value="Valider" onClick="verif('s3', 2)" />
                             <span class="spanmes"></span>
-                            
-                        </form>
 
+                        </form>
                     </p>
 
                     <p>
-
-                        <b>4.</b> Soit $f(x) = x+4$.<br>
-                    
-                        
-                        <form name="s4">
-
-                            <span id='sp7' class='ic_rep'> &emsp; </span>
-                            <div class='enonce'>
-                                Le coefficient directeur est :
-                                <span id='se7'></span>
-                                <script type='text/javascript' language='javascript'>afficher_select('se7',3);</script>
-                            </div>
-                       
-                            <span id='sp8' class='ic_rep'> &emsp; </span>
-                            <div class='enonce'>
-                                L'ordonnée à l'origine est :
-                                <span id='se8'></span>
-                                <script type='text/javascript' language='javascript'>afficher_select('se8',3);</script>
-                            </div>
-
-                        
-                            <input class="bouton1" type="button" value="Valider" onClick="verif('s4', 3)" />
-                            <span class="spanmes"></span>
-                            
-                        </form>
-
-                    </p>
-
-                    <p>
-                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('aff_def_exo1',8)" />
+                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('tri_def_exo2',9)" />
                         <span class="span_exo"></span>
                     </p>
 
@@ -149,15 +137,15 @@
             </li>
 
             <li>
-                <a href="affines_definition.html"><span class='parent'>Définition</span></a>
+                <a href="trinomes_definition.html"><span class='parent'>Définition</span></a>
             </li>
 
             <li>
-                <a href="affines.html"><span class='parent'>Fonctions affines</span></a>
+                <a href="trinomes.html"><span class='parent'>Trinômes</span></a>
             </li>
 
             <li>
-                <a href="../../index.html"><span class='parent'>Accueil</span></a>
+                <a href="../../../index.html"><span class='parent'>Accueil</span></a>
             </li>
         </ul>
     </body>

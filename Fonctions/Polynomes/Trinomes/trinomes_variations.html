@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../../style.css"/>
         <script src="../../../script/script_exo.js"></script>
-        <title>Définition</title>
+        <title>Variation</title>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
@@ -20,16 +20,49 @@
 
     </head>
 
-    <header>Définition</header>
+    <header>Variation</header>
 
     <body>
         <ul class="menu">
             <li>
                 <div class='cours'>
                     <p>
-                        <b class='def'>Définition :</b>
-                        Un trinôme est un polynôme de degré $2$ :<br>
-                        $f(x)=ax^2+bx+c$.
+                        <b class='def'>Propriété :</b>
+                        Soit $f(x)=ax^2+bx+c$ un trinôme.<br>
+                        
+                            <ul>
+                                <li>
+                                    si $a>0$ , le tableau de variation est :<br>
+                                    $
+                                        \begin{array}{|c|ccc|}
+                                            \hline
+                                            x           & - \infty  &            & \alpha   &           & + \infty  \\
+                                            \hline
+                                                        & + \infty  &            &          &           & + \infty  \\
+                                            f(x)        &           &  \searrow  &          & \nearrow  &           \\
+                                                        &           &            &  \beta   &           &           \\
+                                            \hline
+                                        \end{array}
+                                    $
+                                    <br>avec $\alpha=-\frac{b}{2a}$ et $\beta=f(\alpha)$.
+                                </li>
+                                <br>
+                                <li>
+                                    si $a<0$ , le tableau de variation est :<br>
+                                    $
+                                        \begin{array}{|c|ccc|}
+                                            \hline
+                                            x           & - \infty  &            & \alpha   &           & + \infty  \\
+                                            \hline
+                                                        &           &            & \beta    &           &           \\
+                                            f(x)        &           &  \nearrow  &          & \searrow  &           \\
+                                                        & - \infty  &            &          &           & - \infty  \\
+                                            \hline
+                                        \end{array}
+                                    $
+                                    <br>avec $\alpha=-\frac{b}{2a}$ et $\beta=f(\alpha)$.
+                                </li>
+                            </ul>
                     </p>
                     <p>
                         <b class='exemple'>Exemple 1 :</b>
@@ -48,30 +81,11 @@
                         - forme canonique : $f(x)=(x-2)^2+1$;<br>
                         - forme factorisée : $f(x)=(x-1)(x-3)$.
                     </p>
-                    <p>
-                        <b class='def'>Forme canonique :</b>
-                        Soit $f(x)=ax^2+bx+c$ un trinôme.<br>
-                        La forme canonique de $f$ est :
-                        $f(x) = a(x- \alpha)^2+\beta$,<br>
-                        avec $\alpha=-\frac{b}{2a}$ et $\beta = f(\alpha)$.
-                    </p>
-                    <p>
-                        <b class='exemple'>Exemple 3 :</b>
-                        Soit $f(x)=x^2-8x-4$.<br>
-                        $\alpha = -\frac{-8}{2 \times 1} = 4$.<br>
-                        $\beta = f(\alpha) = f(4) = 4^2-8 \times 4 - 4 = - 20$.<br>
-                        Forme canonique : $f(x)=(x-4)^2-20$.
-                    </p>
                 </div>
             </li>
             <li>
                 <a href="trinomes_definition_exercice1.html">
                     <script type='text/javascript' language='javascript'>fait('tri_def_exo1');</script>Exercices 1</span>
-                </a>
-            </li>
-            <li>
-                <a href="trinomes_definition_exercice2.html">
-                    <script type='text/javascript' language='javascript'>fait('tri_def_exo2');</script>Exercices 2</span>
                 </a>
             </li>
             <li>
