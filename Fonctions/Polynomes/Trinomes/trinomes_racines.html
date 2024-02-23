@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../../style.css"/>
         <script src="../../../script/script_exo.js"></script>
-        <title>Définition</title>
+        <title>Variation</title>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
@@ -20,7 +20,7 @@
 
     </head>
 
-    <header>Définition</header>
+    <header>Racines</header>
 
     <body>
         <ul class="menu">
@@ -28,50 +28,46 @@
                 <div class='cours'>
                     <p>
                         <b class='def'>Définition :</b>
-                        Un trinôme est un polynôme de degré $2$ :<br>
-                        $f(x)=ax^2+bx+c$.
+                        Soit $f(x)=ax^2+bx+c$.<br>
+                        Le <b>discriminant</b> de $f$ esr défini par :
+                        $\Delta=b^2-4ac$.
                     </p>
                     <p>
                         <b class='exemple'>Exemple 1 :</b>
                         $f(x)=x^2-2x+3$.<br>
+                        $\Delta = (-2)^2-4 \times 1 \times3 = -8$.
+                    </p>
+                    
+                    <p>
+                        <b class='exemple'>Exemple 2 :</b>
+                        $f(x)=-2x^2+8x-5$.<br>
+                        $\Delta = 8^2-4 \times (-2) \times (-5) = 24$
                     </p>
                     <p>
-                        <b class='def'>Ecriture d'un trinôme :</b>
-                        Un trinôme peut s'écrire sous trois formes différentes :<br>
-                        - <b>développée</b> : $f(x) = ax^2+bx+c$ ;<br>
-                        - <b>canonique</b> : $f(x) = a(x- \alpha)^2+\beta$ ;<br>
-                        - <b>factorisée</b> : $f(x) = a(x-x_1)(x-x_2)$. 
-                    </p>
-                    <p>
-                        <b class='exemple'>Exemple 2 :</b><br>
-                        - forme développée : $f(x)=x^2-4x+3$;<br>
-                        - forme canonique : $f(x)=(x-2)^2+1$;<br>
-                        - forme factorisée : $f(x)=(x-1)(x-3)$.
-                    </p>
-                    <p>
-                        <b class='def'>Forme canonique :</b>
-                        Soit $f(x)=ax^2+bx+c$ un trinôme.<br>
-                        La forme canonique de $f$ est :
-                        $f(x) = a(x- \alpha)^2+\beta$,<br>
-                        avec $\alpha=-\frac{b}{2a}$ et $\beta = f(\alpha)$.
-                    </p>
+                        <b class='def'>Propriété :</b>
+                        Soit $f(x)=ax^2+bx+c$.<br><br>
+                        - Si $\Delta > 0$, $f$ admet deux racines :<br>
+                            $x_1 = \dfrac{-b-\sqrt{\Delta}}{2a}$ &ensp; et &ensp;  $x_2 = \dfrac{-b+\sqrt{\Delta}}{2a}$ ; <br><br>
+                        - Si $\Delta = 0$, $f$ admet une seule racine :<br>
+                            $x_0 = \dfrac{-b}{2a}$ ; <br><br>
+                        - Si $\Delta < 0$, $f$ n'admet pas de racine réelle.
+                                            
+                   </p>
+
                     <p>
                         <b class='exemple'>Exemple 3 :</b>
-                        Soit $f(x)=x^2-8x-4$.<br>
-                        $\alpha = -\frac{-8}{2 \times 1} = 4$.<br>
-                        $\beta = f(\alpha) = f(4) = 4^2-8 \times 4 - 4 = - 20$.<br>
-                        Forme canonique : $f(x)=(x-4)^2-20$.
+                        $f(x)=x^2+x-12$.<br>
+                        $\Delta = 1^2-4 \times 1 \times (-12) = 49 = 7^2$<br>
+                        $\Delta > 0$ donc il y a deux racines :<br>
+                        $x_1 = \dfrac{-1-7}{2 \times 1} = \dfrac{-8}{2} = - 4$ ;<br>
+                        $x_2 = \dfrac{-1+7}{2 \times 1} = \dfrac{6}{2} = 3$.
                     </p>
+
                 </div>
             </li>
             <li>
-                <a href="trinomes_definition_exercice1.html">
+                <a href="trinomes_variations_exercice1.html">
                     <script type='text/javascript' language='javascript'>fait('tri_def_exo1');</script>Exercices 1</span>
-                </a>
-            </li>
-            <li>
-                <a href="trinomes_definition_exercice2.html">
-                    <script type='text/javascript' language='javascript'>fait('tri_def_exo2');</script>Exercices 2</span>
                 </a>
             </li>
             <li>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercice1</title>
+        <link rel="stylesheet" href="../../../style.css" />
+        <script src="script/script_trinomes_variations_exercice1.js"></script>
+        <script src="../../../script/script_select.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+    </head>
+
+    <header>Exercice 1</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b>1.</b> Soit $f(x) = -x^2+4x-3$.<br>
+                   
+                        <form name="s1">
+                            <span id='sp1' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                Compléter le tableau de signe :<br><br>
+                                <table>
+                                    <tr>
+                                        <th>$x$</th>
+                                        <td>$-\infty$</td>
+                                        <td></td>
+                                        <td>
+                                            <span id='se1'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se1',2);</script>
+                                        </td>
+                                        <td></td>
+                                        <td>$+\infty$</td>
+                                    </tr>
+                                    <tr>
+                                        <th class='t_bas'></th>
+                                        <td class='t_bas'>
+                                            <span id='se2'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se2',0);</script>
+                                        </td>
+                                        <td class='t_bas'></td>
+                                        <td class='t_bas'>
+                                            <span id='se3'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se3',3);</script>
+                                        </td>
+                                        <td class='t_bas'></td>
+                                        <td class='t_bas'>
+                                            <span id='se4'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se4',0);</script>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class='t_bh'>$f(x)$</th>
+                                        <td class='t_bh'></td>
+                                        <td class='t_bh'>
+                                            <span id='se5'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se5',1);</script>
+                                        </td>
+                                        <td class='t_bh'>
+                                        </td>
+                                        <td class='t_bh'>
+                                            <span id='se6'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se6',1);</script>
+                                        </td>
+                                        <td class='t_bh'></td>
+                                    </tr>
+                                    <tr>
+                                        <th class='t_haut'></th>
+                                        <td>
+                                            <span id='se7'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se7',0);</script>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <span id='se8'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se8',3);</script>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <span id='se9'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se9',0);</script>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <input class="bouton1" type="button" value="Valider" onClick="verif2('s1','sp1', 0)" />
+                            <span class="spanmes"></span>
+                           
+                        </form>
+                    </p>
+
+                    <p>
+                        <b>2.</b> Soit $f(x) = x^2+6x+7$.<br>
+                   
+                        <form name="s2">
+                            <span id='sp2' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                Compléter le tableau de signe :<br><br>
+                                <table>
+                                    <tr>
+                                        <th>$x$</th>
+                                        <td>$-\infty$</td>
+                                        <td></td>
+                                        <td>
+                                            <span id='se10'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se10',4);</script>
+                                        </td>
+                                        <td></td>
+                                        <td>$+\infty$</td>
+                                    </tr>
+                                    <tr>
+                                        <th class='t_bas'></th>
+                                        <td class='t_bas'>
+                                            <span id='se11'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se11',0);</script>
+                                        </td>
+                                        <td class='t_bas'></td>
+                                        <td class='t_bas'>
+                                            <span id='se12'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se12',3);</script>
+                                        </td>
+                                        <td class='t_bas'></td>
+                                        <td class='t_bas'>
+                                            <span id='se13'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se13',0);</script>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class='t_bh'>$f(x)$</th>
+                                        <td class='t_bh'></td>
+                                        <td class='t_bh'>
+                                            <span id='se14'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se14',1);</script>
+                                        </td>
+                                        <td class='t_bh'>
+                                        </td>
+                                        <td class='t_bh'>
+                                            <span id='se15'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se15',1);</script>
+                                        </td>
+                                        <td class='t_bh'></td>
+                                    </tr>
+                                    <tr>
+                                        <th class='t_haut'></th>
+                                        <td>
+                                            <span id='se16'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se16',0);</script>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <span id='se17'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se17',3);</script>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <span id='se18'></span>
+                                            <script type='text/javascript' language='javascript'>afficher_select('se18',0);</script>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <input class="bouton1" type="button" value="Valider" onClick="verif2('s2','sp2', 1)" />
+                            <span class="spanmes"></span>
+                           
+                        </form>
+                    </p>
+
+                    <p>
+                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('tri_var_exo1',2)" />
+                        <span class="span_exo"></span>
+                    </p>
+
+                </div>
+            </li>
+
+            <li>
+                <a href="trinomes_variations.html"><span class='parent'>Variations</span></a>
+            </li>
+
+            <li>
+                <a href="trinomes.html"><span class='parent'>Trinômes</span></a>
+            </li>
+
+            <li>
+                <a href="../../../index.html">Accueil</a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>

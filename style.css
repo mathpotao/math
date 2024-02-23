@@ -46,7 +46,7 @@ select
 {
     color:red;
     min-width: 60px;
-    font-size:105%;
+    font-size:110%;
     -webkit-appearance: none;
     appearance: none;
 }
@@ -283,6 +283,22 @@ td
     /*max-width: 400px;*/
 }
 
+.t_bas
+{
+    border-bottom: none;
+}
+
+.t_haut
+{
+    border-top: none;
+}
+
+.t_bh
+{
+    border-bottom: none;
+    border-top: none;
+}
+
 .carB
 {
     background-color: white;
@@ -301,6 +317,6 @@ td
     
    .menu a 
     {
-        background-color:lightblue;
+        background-color: #3498db;
     }
 }
