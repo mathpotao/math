@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style.css"/>
+        <script src="../../../script/script_exo.js"></script>
+        <title>Courbe</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
+    </head>
+
+    <header>Courbe</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b class='def'>Propriété 1 :</b>
+                        Soit $f(x)=ax^2+bx+c$.<br>
+                        La courbe de $f$ est une parabole : <br>
+                        - dirigée vers le haut si $a>0$ ; <br>
+                        - dirigée vers le bas si $a<0$.
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 1 :</b> <br>
+                        $f_1(x)=x^2-2x+3$ ;<br>
+                        $f_2(x)=-x^2-2x+1$.<br>
+                         <img src="images/paraboles_exemple1.png"/>
+                    </p>
+                    
+                    
+                    <p>
+                        <b class='def'>Propriété 2 :</b>
+                        Soit $f(x)=ax^2+bx+c$.<br><br>
+                        Le sommet de la parabole est
+                        $S(\alpha;\beta)$ avec $\alpha = -\frac{b}{2a}$
+                        et $\beta = f(\alpha)$.            
+                   </p>
+
+
+                </div>
+            </li>
+            <li>
+                <a href="trinomes_courbe_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('tri_cou_exo1');</script>Exercices 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="trinomes_courbe_exercice2.html">
+                    <script type='text/javascript' language='javascript'>fait('tri_cou_exo2');</script>Exercices 2</span>
+                </a>
+            </li>
+            <li>
+                <a href="trinomes.html"><span class='parent'>Trinômes</span></a>
+            </li>
+            <li>
+                <a href="../../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>

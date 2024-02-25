@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercice2</title>
+        <link rel="stylesheet" href="../../../style.css" />
+        <script src="script/script_trinomes_courbe_exercice2.js"></script>
+        <script src="../../../script/script_select.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+    </head>
+
+    <header>Exercice 2</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b>1. </b>Soit le graphique suivant.<br><br>
+                                <img src="images/paraboles_exercice2_A.png"/>
+                        <form name="s1">
+
+                            <span id='sp1' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La parabole de $x^2+6x+10$ est :
+                                <span id='se1'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se1',0);</script>
+                            </div>
+                       
+                            <span id='sp2' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La parabole de  $-x^2+2x+1$ est :
+                                <span id='se2'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se2',0);</script>
+                            </div>
+
+                            <span id='sp3' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La parabole de  $-2x^2+8x-4$ est :
+                                <span id='se3'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se3',0);</script>
+                            </div>
+                       
+                            <span id='sp4' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La parabole de  $3x^2+12x+11$ est :
+                                <span id='se4'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se4',0);</script>
+                            </div>
+
+                        
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s1', 0)" />
+                            <span class="spanmes"></span>
+
+                        </form>
+                    </p>
+
+                    <p>
+                        <b>2. </b>Soit le graphique suivant.<br><br>
+                                <img src="images/paraboles_exercice2_B.png"/>
+                        <form name="s2">
+
+                            <span id='sp5' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La parabole de $x^2-4x+5$ est :
+                                <span id='se5'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se5',0);</script>
+                            </div>
+                       
+                            <span id='sp6' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La parabole de $-x^2+6x-4$ est :
+                                <span id='se6'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se6',0);</script>
+                            </div>
+
+                            <span id='sp7' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La parabole de $-x^2+6x-9$ est :
+                                <span id='se7'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se7',0);</script>
+                            </div>
+                       
+                            <span id='sp8' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                La parabole de $x^2-4x+3$ est :
+                                <span id='se8'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se8',0);</script>
+                            </div>
+
+                        
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s2', 1)" />
+                            <span class="spanmes"></span>
+
+                        </form>
+                    </p>
+                    
+
+
+                    <p>
+                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('tri_cou_exo2',8)" />
+                        <span class="span_exo"></span>
+                    </p>
+
+                </div>
+            </li>
+
+            <li>
+                <a href="trinomes_courbe.html"><span class='parent'>Courbe</span></a>
+            </li>
+
+            <li>
+                <a href="trinomes.html"><span class='parent'>Trinômes</span></a>
+            </li>
+
+            <li>
+                <a href="../../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>
