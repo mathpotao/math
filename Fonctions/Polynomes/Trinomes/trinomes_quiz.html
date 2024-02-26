@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="../../../style.css" />
+        <script src="script/script_trinomes_quiz.js"></script>
+        <script src="../../../script/script_quiz.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+    </head>
+
+    <header>Quiz</header>
+
+    <body>
+        
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <form name="quizz" action="javascript:check();">
+                            <div name="quiz">
+                                <b>1.</b> Soit $f(x)=x^2-6x+11$.<br><br>
+                                <div class='quiz'>
+                                    <span name="sq" class='ic_rep'> &emsp; </span>
+                                    &emsp;Le sommet de la parabole est :
+                                    <div class="question" id='q1'>
+                                        <script type='text/javascript' language='javascript'>init(0);</script>
+                                    </div>
+                                </div><br>
+
+                                <b>2.</b> Soit $f(x)=-x^2+3x-2$.<br><br>
+                                <div class='quiz'>
+                                    <span name="sq" class='ic_rep'> &emsp; </span>
+                                    &emsp;Une racine est :
+                                    <div class="question" id='q2'>
+                                        <script type='text/javascript' language='javascript'>init(1);</script>
+                                    </div>
+                                </div><br>
+
+                                <b>3.</b> Soit $f(x)=-2x^2+12x-7$.<br><br>
+                                <div class='quiz'>
+                                    <span name="sq" class='ic_rep'> &emsp; </span>
+                                    &emsp;$\alpha$ est égal à :
+                                    <div class="question" id='q3'>
+                                        <script type='text/javascript' language='javascript'>init(2);</script>
+                                    </div>
+                                </div><br>
+
+                                <b>4.</b> Soit $f(x)=x^2+5x-6$.<br><br>
+                                <div class='quiz'>
+                                    <span name="sq" class='ic_rep'> &emsp; </span>
+                                    &emsp;Une racine est :
+                                    <div class="question" id='q4'>
+                                        <script type='text/javascript' language='javascript'>init(3);</script>
+                                    </div>
+                                </div><br>
+
+                                <b>5.</b> Soit $f(x)=-x^2+4x-3$.<br><br>
+                                <div class='quiz'>
+                                    <span name="sq" class='ic_rep'> &emsp; </span>
+                                    &emsp;$\beta$ est égal à :
+                                    <div class="question" id='q5'>
+                                        <script type='text/javascript' language='javascript'>init(4);</script>
+                                    </div>
+                                </div><br>
+
+                                <b>6.</b> Soit $f(x)=-x^2+x-1$.<br><br>
+                                <div class='quiz'>
+                                    <span name="sq" class='ic_rep'> &emsp; </span>
+                                    &emsp;$\Delta$ est égal à :
+                                    <div class="question" id='q6'>
+                                        <script type='text/javascript' language='javascript'>init(5);</script>
+                                    </div>
+                                </div><br>
+
+                             </div>
+                        </form>
+                    </p>
+
+                    <p>
+                        <input class="bouton2" type="button" value="Valider le quiz" onClick="verification('trinomes_quiz', 6)" />
+                        <span id='message' class="span_exo"></span>
+                    </p>
+
+                </div>
+            </li>
+
+            <li>
+                <a href="trinomes.html"><span class='parent'>Trinômes</span></a>
+            </li>
+
+            <li>
+                <a href="../../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+
+    </body>
+
+    <footer class="quizz"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css"/>
+        <script src="../../script/script_exo.js"></script>
+        <title>Fonction carrée</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
+    </head>
+
+    <header>La fonction carrée</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b class='def'>Définition :</b>
+                        La fonction carrée est définie sur &#8477; par :
+                        $f(x)=x^2$.
+                    </p>
+                    <p>
+                        <b class='def'>Propriétés :</b>
+                        La fonction carrée est paire et positive. 
+                        Elle est décroissante sur $]-\infty;0]$ et croissante sur
+                        $[0;\infty[$.
+                        Sa courbe est une parabole.
+                    </p>
+                    <p>
+                        <b class='def'>Courbe :</b> <br>
+                        <img src="images/carree.png"/>
+                    </p>
+                    
+                    <p>
+                        <b class='def'>Limites :</b><br>
+                        $\displaystyle{\lim_{x \to - \infty} (x^2) =  \lim_{x \to + \infty} (x^2) = + \infty }$
+                    </p>
+
+                    <p>
+                        <b class='exemple'>Exemple 1 :</b>
+                        Soit $f_1(x)=5-x^2$ et $f_2(x)=x^2+7$.<br>
+                        Par soustraction : $\displaystyle{\lim_{x \to + \infty} f_1(x) = - \infty}$.<br>
+                        Par somme : $\displaystyle{\lim_{x \to - \infty} f_2(x) = + \infty}$.<br>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="references_carree_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('ref_car_exo1');</script>Exercices 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="references.html"><span class='parent'>Fonctions de référence</span></a>
+            </li>
+            <li>
+                <a href="../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>

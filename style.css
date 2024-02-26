@@ -157,7 +157,7 @@ select:hover
     display:block;                /* Transformation en block */
     min-width: 120px;             /* Largeur minimale des liens */   
     margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
-    padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    padding: 0.4rem 0.1rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: left;           /* Centrage du texte */   
     background-color: #ccc;    /* Couleur d'arrière-plan */
     color: #000;                  /* Couleur du texte */
