@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../style.css"/>
         <script src="../../script/script_exo.js"></script>
-        <title>Fonction carrée</title>
+        <title>Fonction inverse</title>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
@@ -20,7 +20,7 @@
 
     </head>
 
-    <header>La fonction carrée</header>
+    <header>La fonction inverse</header>
 
     <body>
         <ul class="menu">
@@ -28,63 +28,63 @@
                 <div class='cours'>
                     <p>
                         <b class='def'>Définition :</b>
-                        La fonction carrée est définie sur &#8477; par :
-                        $f(x)=x^2$.
+                        La fonction inverse est définie sur &#8477;* par :
+                        $f(x)=\dfrac{1}{x}$.
                     </p>
                     <p>
                         <b class='def'>Propriétés :</b>
-                        La fonction carrée est paire et positive. 
-                        Elle est décroissante sur $]-\infty;0]$ et croissante sur
-                        $[0;+ \infty[$.
-                        Sa courbe est une parabole.
+                        La fonction inverse est impaire. 
+                        Elle est décroissante sur $]\infty;0[$ et sur $]0;\infty[$.
                     </p>
                     <p>
                         <b class='def'>Courbe :</b> <br>
-                        <img src="images/carree.png"/>
+                        <img src="images/inverse.png"/>
                     </p>
                     
                     <p>
                         <b class='def'>Limites :</b><br>
-                        $\displaystyle{\lim_{x \to - \infty} (x^2) =  \lim_{x \to + \infty} (x^2) = + \infty }$
+                        $\displaystyle{\lim_{x \to - \infty} \left( \frac{1}{x} \right) =  0}$<br>
+                        $\displaystyle{\lim_{x \to 0^{-}} \left( \frac{1}{x} \right) =  - \infty}$<br>
+                        $\displaystyle{\lim_{x \to 0^{+}} \left( \frac{1}{x} \right) =  + \infty}$<br>
+                        $\displaystyle{\lim_{x \to + \infty} \left( \frac{1}{x} \right) = + \infty }$
                     </p>
 
                     <p>
                         <b class='exemple'>Exemple 1 :</b>
-                        Soit $f_1(x)=5-x^2$.<br>
-                        Par soustraction : $\displaystyle{\lim_{x \to + \infty} f_1(x) = - \infty}$.<br>
+                        Soit $f_1(x)=2-x^3$.<br>
+                        Par soustraction : $\displaystyle{\lim_{x \to - \infty} f_1(x) = + \infty}$.<br>
                     </p>
 
                     <p>
                         <b class='exemple'>Exemple 2 :</b>
-                        Soit $f_2(x)=x^2+7$.<br>
-                        Par somme : $\displaystyle{\lim_{x \to - \infty} f_2(x) = + \infty}$.<br>
+                        Soit $f_2(x)=x^3+7$.<br>
+                        Par somme : $\displaystyle{\lim_{x \to + \infty} f_2(x) = + \infty}$.<br>
                     </p>
                     
                     <p>
                         <b class='def'>Dérivée :</b>
-                        $f$ est dérivable sur &#8477; et : <br>
-                        $\displaystyle{f'(x) = 2x }$
+                        $f$ est dérivable sur &#8477;* et :<br>
+                        $f'(x)=-\dfrac{1}{x^2}$.
                     </p>
 
                     <p>
                         <b class='exemple'>Exemple 3 :</b>
-                        Soit $T_1$ la tangente à la parabole de la fonction carrée 
+                        Soit $T_1$ la tangente à la courbe de la fonction cube 
                         au point d'abscisse $1$ et $T_2$ au point d'abscisse $2$.<br>
-                        Le coefficient directeur de $T_1$ est $f'(1)=2 \times 1 = 2$.<br>
-                        Le coefficient directeur de $T_2$ est $f'(2)=2 \times 2 = 4$.<br>
-
+                        Le coefficient directeur de $T_1$ est $f'(1)=-\dfrac{1}{1^2} = -1$.<br>
+                        Le coefficient directeur de $T_2$ est $f'(2)=-\dfrac{1}{2^2} = -\dfrac{1}{4}$..<br>
                     </p>
 
                 </div>
             </li>
             <li>
-                <a href="references_carree_exercice1.html">
-                    <script type='text/javascript' language='javascript'>fait('ref_car_exo1');</script>Exercices 1</span>
+                <a href="references_inverse_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('ref_inv_exo1');</script>Exercices 1</span>
                 </a>
             </li>
             <li>
-                <a href="references_carree_exercice2.html">
-                    <script type='text/javascript' language='javascript'>fait('ref_car_exo2');</script>Exercices 2</span>
+                <a href="references_inverse_exercice2.html">
+                    <script type='text/javascript' language='javascript'>fait('ref_inv_exo2');</script>Exercices 2</span>
                 </a>
             </li>
             <li>
