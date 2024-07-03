@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css"/>
+        <script src="../../script/script_exo.js"></script>
+        <title>Définition</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
+    </head>
+
+    <header>Définition</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b class='def'>Définition :</b>
+                        Une fonction $f$ est dérivable en un réel $a$ si 
+                        la limite de son taux d'accroissement en $a$ existe quand
+                        $h$ tend vers $0$ :<br>
+                        $\displaystyle{\lim_{h \to 0} \left( \frac{f(a+h)-f(a)}{h} \right) =  f'(a)}$.<br>
+                        Dans ce cas la limite du taux d'accroissement est le nombre dérivée de $f$ en $a$ et se note $f'(a)$.
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 1 :</b>
+                        Soit $f(x)=x^2$.<br>
+                        Le taux d'accroissement de $f$ en $1$ est :<br>
+                        $\displaystyle{t(h) = \frac{(1+h)^2-1^2}{h} }$<br>
+                        $\displaystyle{~ =  \frac{1+2h+h^2-1}{h}}$<br>
+                        $\displaystyle{~ =  \frac{2h+h^2}{h}}$<br>
+                        $\displaystyle{~ =  2+h}$<br>
+
+                        Ainsi quand $h$ tend vers $0$, $t(h)$ tend vers $2$.<br>
+                        On en déduit que $f$ est dérivable en $1$ et que $f'(1) = 2$.
+                    </p>
+                    <p>
+                        <b class='def'>Propriété géométrique :</b>
+                        Soit $f$ une fonction dérivable en un réel $a$.
+                        Le nombre dérivé $f'(a)$ est le coefficient directeur de la tangente $T_a$
+                        à la courbe de $f$ au point d'abscisse $a$.
+
+                    </p>
+                     <p>
+                        <b class='exemple'>Exemple 2 :</b>
+                        Soit $f(x)=x^2$.<br>
+                        On sait que $f$ est dérivable en $1$ et que
+                        $f'(1) = 2$. <br>
+                        On obtient le graphique suivant :<br>
+                        <img src="images/fonction_carree_tangente_en_1.png"/>
+
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="derivees_definition_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('aff_def_exo1');</script>Exercices 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="derivees.html"><span class='parent'>Fonctions dérivées</span></a>
+            </li>
+            <li>
+                <a href="../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>
