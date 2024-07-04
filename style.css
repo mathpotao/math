@@ -152,6 +152,11 @@ select:hover
     color:green;
 }
 
+.formule
+{
+    color:red;
+}
+
 .cours
 {
     display:block;                /* Transformation en block */

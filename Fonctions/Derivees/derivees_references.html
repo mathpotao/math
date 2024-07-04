@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css"/>
+        <script src="../../script/script_exo.js"></script>
+        <title>Définition</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
+    </head>
+
+    <header>Dérivées des fonctions de référence</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b class='def'>Fonction carrée : $f(x)=x^2$ :</b><br>
+                        $f$ est dérivable sur $\mathbb{R}$ et :
+                        <b class='formule'>$f'(x) = 2x$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction cube : $f(x)=x^3$ :</b><br>
+                        $f$ est dérivable sur $\mathbb{R}$ et :
+                        <b class='formule'>$f'(x) = 3x^2$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction puissance : $f(x)=x^n$ :</b><br>
+                        $f$ est dérivable sur $\mathbb{R}$ et :
+                        <b class='formule'>$f'(x) = nx^{n-1}$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction inverse : $f(x)=\dfrac{1}{x}$ :</b><br>
+                        $f$ est dérivable sur $\mathbb{R}^*$ et :
+                        <b class='formule'>$f'(x) = \dfrac{-1}{x^2}$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction racine carrée : $f(x)= \sqrt{x}$ :</b><br>
+                        $f$ est dérivable sur $\mathbb{R}^{+*}$ et :
+                        <b class='formule'>$f'(x) = \dfrac{-1}{2 \sqrt{x}}$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction exponentielle : $f(x)= \text{e}^x$ :</b><br>
+                        $f$ est dérivable sur $\mathbb{R}$ et :
+                        <b class='formule'>$f'(x) = \text{e} ^x$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction logarithme : $f(x)= \text{ln}(x)$ :</b><br>
+                        $f$ est dérivable sur $\mathbb{R}^{+*}$ et :
+                        <b class='formule'>$f'(x) = \dfrac{1}{x}$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction cosinus : $f(x)= \text{cos}(x)$ :</b><br>
+                        $f$ est dérivable sur $\mathbb{R}$ et :
+                        <b class='formule'>$f'(x) = -\text{sin}(x)$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction sinus : $f(x)= \text{sin}(x)$ :</b><br>
+                        $f$ est dérivable sur $\mathbb{R}$ et :
+                        <b class='formule'>$f'(x) = \text{cos}(x)$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction tangente : $f(x)= \text{tan}(x)$ :</b><br>
+                        $f$ est dérivable sur $]- \pi/2 ; \pi/2 [$ et :
+                        <b class='formule'>$f'(x) = 1 + \text{tan}^2(x)$</b>.
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 1 :</b>
+                        Soit $f(x)=x^5$.<br>
+                        $f$ est dérivable sur $\mathbb{R}$ et :
+                        $f'(x) = 5x^4$</b>.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="derivees_definition_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('der_ref_exo1');</script>Exercices 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="derivees.html"><span class='parent'>Fonctions dérivées</span></a>
+            </li>
+            <li>
+                <a href="../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>
