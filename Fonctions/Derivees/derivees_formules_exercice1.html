@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercice1</title>
+        <link rel="stylesheet" href="../../style.css" />
+        <script src="script/script_derivees_formules_exercice1.js"></script>
+        <script src="../../script/script_select.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+    </head>
+
+    <header>Exercice 1</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b>1.</b> Soit $f(x) = x^2 + \text{e}^x$ et $g(x) = \text{sin}(x) -x$.<br>
+                        
+                        <form name="s1">
+
+                            <span id='sp1' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                On a :<br>
+                                <ul>
+                                    <li>1 : $f'(x) = x + \text{e}^x$</li>
+                                    <li>2 : $f'(x) = 2x$</li>
+                                    <li>3 : $f'(x) = \text{e}^x$</li>
+                                    <li>4 : $f'(x) = 2x+\text{e}^x$</li>
+                                </ul><br>
+                                choisir le numéro de la bonne réponse :
+
+                                <span id='se1'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se1',0);</script>
+                            </div>
+                       
+                            <span id='sp2' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                On a :<br>
+                                <ul>
+                                    <li>1 : $g'(x) = \text{cos}(x)-1$</li>
+                                    <li>2 : $g'(x) = \text{sin}(x)-1$</li>
+                                    <li>3 : $g'(x) = \text{cos}(x)$</li>
+                                    <li>4 : $g'(x) = \text{sin}(x)$</li>
+                                </ul><br>
+                                choisir le numéro de la bonne réponse :
+                                <span id='se2'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se2',0);</script>
+                            </div>
+
+                        
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s1', 0)" />
+                            <span class="spanmes"></span>
+
+                        </form>
+                    </p>
+
+                    <p>
+
+                        <b>2.</b> Soit $f(x) = x^6$ et $g(x) = x^{10}$.<br>
+                    
+                        
+                        <form name="s2">
+
+                            <span id='sp3' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                On a :<br>
+                                <ul>
+                                    <li>1 : $f'(x) = x^5$</li>
+                                    <li>2 : $f'(x) = 6x^5$</li>
+                                    <li>3 : $f'(x) = 5x^6$</li>
+                                    <li>4 : $f'(x) = 5x^4$</li>
+                                </ul><br>
+                                choisir le numéro de la bonne réponse :
+                                <span id='se3'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se3',1);</script>
+                            </div>
+                       
+                            <span id='sp4' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                On a :<br>
+                                <ul>
+                                    <li>1 : $g'(x) = 10x^9$</li>
+                                    <li>2 : $g'(x) = 9x^9$</li>
+                                    <li>3 : $g'(x) = x^9$</li>
+                                    <li>4 : $g'(x) = 9x^8$</li>
+                                </ul><br>
+                                choisir le numéro de la bonne réponse :
+                                <span id='se4'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se4',1);</script>
+                            </div>
+
+                        
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s2', 1)" />
+                            <span class="spanmes"></span>
+                            
+                        </form>
+
+                    </p>
+
+                    <p>
+                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('der_for_exo1',4)" />
+                        <span class="span_exo"></span>
+                    </p>
+
+                </div>
+            </li>
+
+            <li>
+                <a href="derivees_definition.html"><span class='parent'>Définition</span></a>
+            </li>
+
+            <li>
+                <a href="derivees.html"><span class='parent'>Fonctions dérivées</span></a>
+            </li>
+
+            <li>
+                <a href="../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>
