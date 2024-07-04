@@ -154,7 +154,51 @@
                     </p>
 
                     <p>
-                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('der_for_exo1',6)" />
+
+                        <b>4.</b> Soit $f(x) = \dfrac{\text{e}^x}{x+1}$ et $g(x) = \dfrac{2x+1}{2-3x}$.<br>
+                    
+                        
+                        <form name="s4">
+
+                            <span id='sp7' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                On a :<br>
+                                <ul>
+                                    <li>1 : $f'(x) = \text{e}^x$</li>
+                                    <li>2 : $f'(x) = \dfrac{\text{e}^x}{(x+1)^2}$</li>
+                                    <li>3 : $f'(x) = \dfrac{x \text{e}^x}{(x+1)^2}$</li>
+                                    <li>4 : $f'(x) = \text{e}^x(x+1)$</li>
+                                </ul><br>
+                                choisir le numéro de la bonne réponse :
+                                <span id='se7'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se7',3);</script>
+                            </div>
+                       
+                            <span id='sp8' class='ic_rep'> &emsp; </span>
+                            <div class='enonce'>
+                                On a :<br>
+                                <ul>
+                                    <li>1 : $g'(x) = -\dfrac{2}{3}$</li>
+                                    <li>2 : $g'(x) = \dfrac{-12x+1}{(2-3x)^2}$</li>
+                                    <li>3 : $g'(x) = \dfrac{2}{2-3x}$</li>
+                                    <li>4 : $g'(x) = \dfrac{7}{(2-3x)^2}$</li>
+                                </ul><br>
+                                choisir le numéro de la bonne réponse :
+                                <span id='se8'></span>
+                                <script type='text/javascript' language='javascript'>afficher_select('se8',3);</script>
+                            </div>
+
+                        
+                            <input class="bouton1" type="button" value="Valider" onClick="verif('s4', 3)" />
+                            <span class="spanmes"></span>
+                            
+                        </form>
+
+                    </p>
+
+
+                    <p>
+                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('der_for_exo1',8)" />
                         <span class="span_exo"></span>
                     </p>
 
