@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../style.css"/>
         <script src="../../script/script_exo.js"></script>
-        <title>Fonction inverse</title>
+        <title>Fonction exponentielle</title>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
@@ -20,71 +20,69 @@
 
     </head>
 
-    <header>La fonction inverse</header>
+    <header>La fonction exponentielle</header>
 
     <body>
         <ul class="menu">
             <li>
                 <div class='cours'>
                     <p>
-                        <b class='def'>Définition :</b>
-                        La fonction inverse est définie sur &#8477;* par :
-                        $f(x)=\dfrac{1}{x}$.
+                        <b class='def'>Notation puissance :</b>
+                        La fonction exponentielle est définie sur &#8477; et on note :
+                        $f(x)=\text{e}^x$.
                     </p>
                     <p>
                         <b class='def'>Propriétés :</b>
-                        La fonction inverse est impaire. 
-                        Elle est décroissante sur $]- \infty;0[$ et sur $]0 ; + \infty[$.
+                        La fonction exponentielle est strictement positive et strictement croissante 
+                        sur &#8477;.
                     </p>
                     <p>
                         <b class='def'>Courbe :</b> <br>
-                        <img src="images/inverse.png"/>
+                        <img src="images/exp.png"/>
                     </p>
                     
                     <p>
                         <b class='def'>Limites :</b><br>
-                        $\displaystyle{\lim_{x \to - \infty} \left( \frac{1}{x} \right) =  0}$<br>
-                        $\displaystyle{\lim_{x \to 0^{-}} \left( \frac{1}{x} \right) =  - \infty}$<br>
-                        $\displaystyle{\lim_{x \to 0^{+}} \left( \frac{1}{x} \right) =  + \infty}$<br>
-                        $\displaystyle{\lim_{x \to + \infty} \left( \frac{1}{x} \right) = 0 }$
+                        $\displaystyle{\lim_{x \to - \infty} \left( \text{e}^x \right) =  0}$<br>
+                        $\displaystyle{\lim_{x \to + \infty} \left( \text{e}^x \right) = + \infty }$
                     </p>
 
                     <p>
                         <b class='exemple'>Exemple 1 :</b>
-                        Soit $f_1(x)=2-\dfrac{1}{x}$.<br>
-                        Par soustraction : $\displaystyle{\lim_{x \to + \infty}  f_1(x)  = 2}$.<br>
+                        Soit $f_1(x)=2-\sqrt{x}$.<br>
+                        Par soustraction : $\displaystyle{\lim_{x \to 0}  f_1(x)  = 2}$.<br>
                     </p>
 
                     <p>
                         <b class='exemple'>Exemple 2 :</b>
-                        Soit $f_2(x)=\dfrac{1}{x}+7$.<br>
-                        Par somme : $\displaystyle{\lim_{x \to 0^{-}}  f_2(x)  =  - \infty}$.<br>
+                        Soit $f_2(x)=\sqrt{x}+7$.<br>
+                        Par somme : $\displaystyle{\lim_{x \to + \infty}  f_2(x)  =  + \infty}$.<br>
                     </p>
                     
                     <p>
                         <b class='def'>Dérivée :</b>
                         $f$ est dérivable sur &#8477;* et :<br>
-                        $f'(x)=-\dfrac{1}{x^2}$.
+                        $f'(x)=-\dfrac{1}{2 \sqrt{x}}$.
                     </p>
 
                     <p>
                         <b class='exemple'>Exemple 3 :</b>
                         Soit $T_1$ la tangente à la courbe de la fonction cube 
-                        au point d'abscisse $1$ et $T_2$ au point d'abscisse $2$.<br>
-                        Le coefficient directeur de $T_1$ est $f'(1)=-\dfrac{1}{1^2} = -1$.<br>
-                        Le coefficient directeur de $T_2$ est $f'(2)=-\dfrac{1}{2^2} = -\dfrac{1}{4}$..<br>
+                        au point d'abscisse $1$ et $T_4$ au point d'abscisse $4$.<br>
+                        Le coefficient directeur de $T_1$ est $f'(1)=-\dfrac{1}{2 \sqrt{1}} = -\dfrac{1}{2}$.<br>
+                        Le coefficient directeur de $T_4$ est $f'(4)=-\dfrac{1}{2 \sqrt{4}} = -\dfrac{1}{4}$.<br>
                     </p>
 
                 </div>
             </li>
             <li>
-                <a href="references_inverse_exercice1.html">
-                    <script type='text/javascript' language='javascript'>fait('ref_inv_exo1');</script>Exercices 1</span>
+                <a href="references_racine_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('ref_rac_exo1');</script>Exercices 1</span>
                 </a>
             </li>
             <li>
-                <a href="references_inverse_exercice2.html">
-                    <script type='text/javascript' language='javascript'>fait('ref_inv_exo2');</script>Exercices 2</span>
+                <a href="references_racine_exercice2.html">
+                    <script type='text/javascript' language='javascript'>fait('ref_rac_exo2');</script>Exercices 2</span>
                 </a>
             </li>
             <li>
