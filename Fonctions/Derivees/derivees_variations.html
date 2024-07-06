@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css"/>
+        <script src="../../script/script_exo.js"></script>
+        <title>Dérivées et variations</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
+    </head>
+
+    <header>Dérivées et variations</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b class='def'>Propriété :</b><br>
+                        Soit $f$ une fonction dérivable sur un intervalle $I$ :<br>
+                        - si $f'$ est positive sur $I$, alors $f$ est croissante sur $I$ ; <br>
+                        - si $f'$ est négative sur $I$, alors $f$ est décroissante sur $I$ ; <br>
+                        - si $f'$ est nulle sur $I$, alors $f$ est constante sur $I$. 
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 1 :</b>
+                        Soit $f(x)=5x-3$.<br>
+                        $f$ est dérivable sur $\mathbb{R}$ et : $f'(x) = 5$<br>
+                        $f'$ est strictement positive, donc
+                        $f$ est strictement croissante sur $\mathbb{R}$.
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 2 :</b>
+                        Soit $f(x)=x \text{e}^x$.<br>
+                        $f$ est dérivable sur $\mathbb{R}$ et : <br>
+                        $f'(x) = 1 \times \text{e}^x + x \times \text{e}^x = \text{e}^x(1+x)$<br>
+                        Or $\text{e}^x>0$ donc $f'(x)$ est du signe de l'expression affine $(1+x)$.<br>
+                        Donc $f$ est décroissante sur $]-\infty ; -1]$ et croissante sur $[ - 1 ; \infty[$
+                        comme résumé dans le tableau ci-dessous.
+
+                            $
+                                \begin{array}{|c|ccc|}
+                                    \hline
+                                    x           & - \infty  &            &  -1      &           & + \infty  \\
+                                    \hline
+                                    f'(x)       &           &      -     &   0      &     +     &           \\
+                                    \hline
+                                                &           &            &          &           &           \\
+                                    f(x)        &           &  \searrow  &          & \nearrow  &           \\
+                                                &           &            &          &           &           \\
+                                    \hline
+                                \end{array}
+                            $
+                    
+                    </p>
+                   
+                    
+                    
+                </div>
+            </li>
+            <li>
+                <a href="derivees_variations_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('der_var_exo1');</script>Exercices 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="derivees.html"><span class='parent'>Fonctions dérivées</span></a>
+            </li>
+            <li>
+                <a href="../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>
