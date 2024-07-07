@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../style.css"/>
         <script src="../../script/script_exo.js"></script>
-        <title>Fonction exponentielle</title>
+        <title>Fonction logarithme</title>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
@@ -20,68 +20,70 @@
 
     </head>
 
-    <header>La fonction exponentielle</header>
+    <header>La fonction logarithme</header>
 
     <body>
         <ul class="menu">
             <li>
                 <div class='cours'>
                     <p>
-                        <b class='def'>Notation puissance :</b>
-                        La fonction exponentielle est définie sur &#8477; et on note :
-                        $f(x)=\text{e}^x$.
+                        <b class='def'>Notation :</b>
+                        La fonction logarithme népérien est définie sur $] 0 ; + \infty[$ et on note :
+                        $f(x)=\text{ln}(x)$.
                     </p>
                     <p>
                         <b class='def'>Propriétés :</b>
-                        La fonction exponentielle est strictement positive et strictement croissante 
-                        sur &#8477;.
+                        La fonction ln est strictement strictement croissante 
+                        sur $] 0 ; + \infty[$.
                     </p>
                     <p>
                         <b class='def'>Courbe :</b> <br>
-                        <img src="images/exp.png"/>
+                        <img src="images/ln.png"/>
                     </p>
                     
                     <p>
                         <b class='def'>Limites :</b><br>
-                        $\displaystyle{\lim_{x \to - \infty} \left( \text{e}^x \right) =  0}$<br>
-                        $\displaystyle{\lim_{x \to + \infty} \left( \text{e}^x \right) = + \infty }$
+                        $\displaystyle{\lim_{x \to 0} \left( \text{ln}(x) \right) =  - \infty}$<br>
+                        $\displaystyle{\lim_{x \to + \infty} \left( \text{ln}(x) \right) = + \infty }$
                     </p>
 
                     <p>
                         <b class='exemple'>Exemple 1 :</b>
-                        Soit $f_1(x)=2-\text{e}^x$.<br>
-                        Par soustraction : $\displaystyle{\lim_{x \to - \infty}  f_1(x)  = 2}$.<br>
+                        Soit $f_1(x)=5-\text{ln}(x)$.<br>
+                        Par soustraction : $\displaystyle{\lim_{x \to 0}  f_1(x)  = + \infty}$.<br>
                     </p>
 
                     <p>
                         <b class='exemple'>Exemple 2 :</b>
-                        Soit $f_2(x)=\text{e}^x+7$.<br>
+                        Soit $f_2(x)=\text{ln}(x)+1$.<br>
                         Par somme : $\displaystyle{\lim_{x \to + \infty}  f_2(x)  =  + \infty}$.<br>
                     </p>
                     
                     <p>
                         <b class='def'>Dérivée :</b>
-                        $f$ est dérivable sur &#8477; et :<br>
-                        $f'(x)=\text{e}^x$.
+                        $f$ est dérivable sur $] 0 ; + \infty[$ et :<br>
+                        $f'(x)=\dfrac{1}{x}$.
                     </p>
 
                     <p>
                         <b class='exemple'>Exemple 3 :</b>
-                        Soit $T_0$ la tangente à la courbe de la fonction exponentielle 
-                        au point d'abscisse $0$.<br>
-                        Le coefficient directeur de $T_0$ est $f'(0)=\text{e}^0 = 1$.<br>
+                        Soit $T_1$ la tangente à la courbe de la fonction ln 
+                        au point d'abscisse $1$ et $T_2$ la tangente à la courbe de la fonction ln 
+                        au point d'abscisse $2$.<br>
+                        Le coefficient directeur de $T_1$ est $f'(1)=\dfrac{1}{1} = 1$.<br>
+                        Le coefficient directeur de $T_2$ est $f'(2)=\dfrac{1}{2}$.<br>
                     </p>
 
                 </div>
             </li>
             <li>
-                <a href="references_exp_exercice1.html">
-                    <script type='text/javascript' language='javascript'>fait('ref_exp_exo1');</script>Exercices 1</span>
+                <a href="references_ln_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('ref_ln_exo1');</script>Exercices 1</span>
                 </a>
             </li>
             <li>
-                <a href="references_exp_exercice2.html">
-                    <script type='text/javascript' language='javascript'>fait('ref_exp_exo2');</script>Exercices 2</span>
+                <a href="references_ln_exercice2.html">
+                    <script type='text/javascript' language='javascript'>fait('ref_ln_exo2');</script>Exercices 2</span>
                 </a>
             </li>
             <li>
