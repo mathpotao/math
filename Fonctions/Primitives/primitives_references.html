@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css"/>
+        <script src="../../script/script_exo.js"></script>
+        <title>Primitives de référence</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
+    </head>
+
+    <header>Primitives des fonctions de référence</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b class='def'>Fonction carrée : $f(x)=x^2$ :</b><br>
+                        une primitive de $f$ est définie sur $\mathbb{R}$ par :<br>
+                        <b class='formule'>$F(x) = \dfrac{1}{3} x^3$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction cube : $f(x)=x^3$ :</b><br>
+                        une primitive de $f$ est définie sur $\mathbb{R}$ par :<br>
+                        <b class='formule'>$F(x) = \dfrac{1}{4} x^4$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction puissance : $f(x)=x^n$ :</b><br>
+                        une primitive de $f$ est définie sur $\mathbb{R}$ par :<br>
+                        <b class='formule'>$F(x) = \dfrac{1}{n+1} x^{n+1}$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction inverse : $f(x)=\dfrac{1}{x}$ :</b><br>
+                        une primitive de $f$ est définie sur $]0 ; + \infty[$ par :<br>
+                        <b class='formule'>$F(x) = \text{ln}(x)$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Inverse de la racine carrée : $f(x)= \dfrac{1}{\sqrt{x}}$ :</b><br>
+                        une primitive de $f$ est définie sur $]0 ; + \infty[$ par :<br>
+                        <b class='formule'>$F(x) = 2 \sqrt{x}$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction exponentielle : $f(x)= \text{e}^x$ :</b><br>
+                        une primitive de $f$ est définie sur $\mathbb{R}$ par :<br>
+                        <b class='formule'>$F(x) = \text{e}^x$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction logarithme : $f(x)= \text{ln}(x)$ :</b><br>
+                        une primitive de $f$ est définie sur $]0 ; + \infty[$ par :<br>
+                        <b class='formule'>$F(x) = x \text{ln}(x)-x$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction cosinus : $f(x)= \text{cos}(x)$ :</b><br>
+                        une primitive de $f$ est définie sur $\mathbb{R}$ par :<br>
+                        <b class='formule'>$F(x) = \text{sin}(x)$</b>.
+                    </p>
+                    <p>
+                        <b class='def'>Fonction sinus : $f(x)= \text{sin}(x)$ :</b><br>
+                        une primitive de $f$ est définie sur $\mathbb{R}$ par :<br>
+                        <b class='formule'>$F(x) = -\text{cos}(x)$</b>.
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 1 :</b>
+                        Soit $f(x)=x^5$.<br>
+                        une primitive de $f$ est définie sur $\mathbb{R}$ par :<br>
+                        <b class='formule'>$F(x) = \dfrac{1}{6} x^6$</b>.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="primitives_references_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('pri_ref_exo1');</script>Exercices 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="primitives.html"><span class='parent'>Primitives</span></a>
+            </li>
+            <li>
+                <a href="../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>
