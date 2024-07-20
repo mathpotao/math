@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css"/>
+        <script src="../../script/script_exo.js"></script>
+        <title>Définition</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
+    </head>
+
+    <header>Définition</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b class='def'>Définitions :</b>
+                        Soit $f$ une fonction et $C$ sa courbe représentative dans un repère orthonormé.<br>
+                        $f$ est dite convexe si pour tous points $A$ et $B$ de la courbe $C$, le segment $[AB]$ est situé 
+                        au-dessus de la courbe $C$. <br>
+                        $f$ est dite concave si pour tous points $A$ et $B$ de la courbe $C$, le segment $[AB]$ est situé 
+                        en-dessous de la courbe $C$. 
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 1 :</b>
+                        La fonction carrée est convexe sur &#8477;.<br><br>
+                        <img src="images/fonction_carree_convexe.png"/>
+                    </p>
+                     <p>
+                        <b class='exemple'>Exemple 2 :</b>
+                        La fonction cube est concave sur $] - \infty ; 0]$ et convexe sur $[0 ; \infty[$.<br><br>
+                        <img src="images/fonction_cube_convexite.png"/>
+                    </p>
+                    <p>
+                        <b class='def'>Propriété 1 :</b>
+                        Soit $f$ une fonction deux fois dérivable et $C$ sa courbe représentative.
+                        Les quatre affirmations ci-dessous sont équivalentes.
+                        <ul>
+                            <li>
+                                $f$ est convexe sur l'intervalle $I$ ;
+                            </li>
+                            <li>
+                                $f'$ est croissante sur l'intervalle $I$ ;
+                            </li>
+                            <li>
+                                $f''$ est positive sur l'intervalle $I$ ;
+                            </li>
+                            <li>
+                                $C$ est au-dessus de toutes ses tangentes sur $I$.
+                            </li>
+                        </ul>
+
+                    </p>
+                    <p>
+                        <b class='def'>Propriété 2 :</b>
+                        Soit $f$ une fonction deux fois dérivable et $C$ sa courbe représentative.
+                        Les quatre affirmations ci-dessous sont équivalentes.
+                        <ul>
+                            <li>
+                                $f$ est concave sur l'intervalle $I$ ;
+                            </li>
+                            <li>
+                                $f'$ est décroissante sur l'intervalle $I$ ;
+                            </li>
+                            <li>
+                                $f''$ est négative sur l'intervalle $I$ ;
+                            </li>
+                            <li>
+                                $C$ est en-dessous de toutes ses tangentes sur $I$.
+                            </li>
+                        </ul>
+
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="primitives_definition_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('der_def_exo1');</script>Exercices 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="primitives.html"><span class='parent'>Primitives</span></a>
+            </li>
+            <li>
+                <a href="../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>

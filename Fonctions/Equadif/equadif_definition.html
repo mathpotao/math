@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css"/>
+        <script src="../../script/script_exo.js"></script>
+        <title>Définition</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
+    </head>
+
+    <header>Définition</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b class='def'>Définition :</b>
+                        Une équation différentielle est une équation entre une fonction et ses dérivées. La variable concernant la fonction est en général notée $y$. 
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 1 :</b>
+                        Soit l'équation différentielle $y'=2y$.<br>
+                        Une solution de cette équation est la fonction :<br>
+                        $f(x) = \text{e}^{2x}$.
+                    </p>
+                    <p>
+                        <b class='def'>Propriété :</b>
+                        Soit $F$ une primitive de la fonction $f$ sur l'intervalle $I$.
+                        Toutes autres primitives $F_2$ de $f$ vérifie : $F_2 = f + k$
+                        avec $k$ un nombre réel.
+
+                    </p>
+                     <p>
+                        <b class='exemple'>Exemple 2 :</b>
+                        Soit $f(x)=x$.<br>
+                        Toutes les primitives de $f$ sont définies sur $\mathbb{R}$
+                        par : <br> 
+                        $F(x) = \dfrac{1}{2}x^2 + k$ (avec $k$ un réel).
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="primitives_definition_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('der_def_exo1');</script>Exercices 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="primitives.html"><span class='parent'>Primitives</span></a>
+            </li>
+            <li>
+                <a href="../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>
