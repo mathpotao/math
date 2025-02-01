@@ -55,6 +55,18 @@ select
 select:hover
 {
     background-color: #fdf1b8;
+    min-width: 40px;
+    font-size:100%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select:focus {
+    background-color: #fdf1b8;
+    min-width: 40px;
+    font-size:100%;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .menu 
