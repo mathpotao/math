@@ -47,13 +47,11 @@ function verif2(nom_form,  k, message_err)
     {
         span_ic.innerHTML = "<b class='juste'>&#10004;</b>";
         span_mes.innerHTML = "<b class='juste'>Bonne réponse !</b>";
-        bout.style.color = "green";
     }
     else
     {
         span_ic.innerHTML = "<b class='faux'>&#10060;</b>";
         span_mes.innerHTML = "<b class='faux2'>" + message_err + "</b>";
-        bout.style.color = "red";
     }
 }
 
@@ -83,13 +81,16 @@ function verif_exo(chaine, n)
 {
     tab_juste = document.querySelectorAll(".juste");
     m = document.querySelector(".span_exo");
-    l = tab_juste.length;
+    l = tab_juste.length;    
+    bout = document.getElementById('bv');
     if (l == 2 * n)
     {
         m.innerHTML = "<b class='juste2'>Exercice validé.</b>";
         if(typeof localStorage!='undefined') 
         {
             localStorage.setItem(chaine, 1);
+            bout.style.backgroundColor = "green";
+
         }
     }
     else
