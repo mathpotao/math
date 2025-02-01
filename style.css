@@ -8,27 +8,27 @@ body
 
 header
 {
-    background:#eae7dc;
+    background:#8e8d8a;
     border: 1px solid #8e8d8a;       /* Ajout d'une bordure */
     border-radius:4px;
     padding:4px 4px 4px 4px;
     margin-bottom:10px;
     font-weight:bold;
     text-align:center;
-    color:#e85a4f;
+    color:#eae7dc;
     width:auto;
     font-size:140%;
 }
 
 footer
 {
-    background:#eae7dc;
+    background:#8e8d8a;
     border: 1px solid #8e8d8a;       /* Ajout d'une bordure */
     border-radius:4px; */
     padding:4px 4px 4px 4px;
     margin-bottom:10px;
     text-align:center;
-    color:#e85a4f;
+    color:#eae7dc;
     width:auto;
     font-size:80%;
 }
@@ -98,18 +98,19 @@ select:hover
 .menu2 
 {
     display: block;          /* Transformation en flexbox */
-    min-width: 30px;             /* Largeur minimale des liens */   
+    min-width: 40px;             /* Largeur minimale des liens */   
     margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.2rem 0.2rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: center;           /* Centrage du texte */   
-    background-color: white;    /* Couleur d'arrière-plan */
-    color: #red;                  /* Couleur du texte */
+    background-color: #d8c3a5;    /* Couleur d'arrière-plan */
+    color: blue;                  /* Couleur du texte */
     text-decoration: none;        /* Suppression du soulignement */
     border: 1px solid #fff;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    margin-left: 20px;
 }
 
 .menu2 option
@@ -119,8 +120,8 @@ select:hover
     margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.2rem 0.2rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: center;           /* Centrage du texte */   
-    background-color: white;    /* Couleur d'arrière-plan */
-    color: #red;                  /* Couleur du texte */
+    background-color: #fdf1b8;    /* Couleur d'arrière-plan */
+    color: blue;                  /* Couleur du texte */
     text-decoration: none;        /* Suppression du soulignement */
     border: 1px solid #fff;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
@@ -174,18 +175,19 @@ select:hover
 
 .bouton1
 {
-    background-color:orange;
+    background-color:#bbb;
+    color:white;
     font-size: 100%;
-    margin-left: 15px;
-    border: 1px solid #fff;       /* Ajout d'une bordure */
-    border-radius: 4px;           /* Arrondis des bordures */
+    margin-left: 5px;
+    border: 1px solid #555;       /* Ajout d'une bordure */
+    border-radius: 8px;           /* Arrondis des bordures */
     margin: 5px 20px;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.5rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
 }
 
 .bouton1:hover
 {
-    background-color: pink;
+    background-color: #e98074;
 }
 
 .bouton2

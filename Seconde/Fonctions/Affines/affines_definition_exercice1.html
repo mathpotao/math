@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercice1</title>
+        <link rel="stylesheet" href="../../../style.css" />
+        <script src="script/script_affines_definition_exercice1.js"></script>
+        <script src="../../../script/script_select.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+    </head>
+
+    <header>Exercice 1</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+
+                    <p>
+
+                        <b>1.</b> Soit $f(x) = -4x+3$.<br>
+                    
+                        
+                            <form name="s1">
+
+                                <div class='enonce'>
+                                    Le coefficient directeur de $f$ est :
+                                    <br><br>
+                                    <ul>
+                                        <li><b class='def'>A</b> : &ensp; $3$</li>
+                                        <li><b class='def'>B</b> : &ensp; $-4$</li>
+                                        <li><b class='def'>C</b> : &ensp; $4$</li>
+                                        <li><b class='def'>D</b> : &ensp; $-4x$</li>
+                                    </ul><br>
+                                    choisir la bonne réponse :<br>
+                                    <span id='sp1' class='ic_rep'> &emsp; </span>
+                                    <span id='spl'></span>
+                                    <script type='text/javascript' language='javascript'>afficher_select('s1', 4);</script>
+
+                                    <input class="bouton1" type="button" value="Valider" onClick="verif1('s1', 1, 'Le coefficient directeur est le facteur de la variable.')" />
+                                    <br>
+                                    <span class='juste2' id="sp2"> &ensp; </span>
+                                </div>
+                            </form>
+                    </p>
+
+                    <p>
+
+
+                        <b>2.</b> Soit $f(x) = -4x+3$.<br>
+
+                            <form name="s2">
+                       
+                            <div class='enonce'>
+                                    L'ordonnée à l'origine de $f$ est :
+                                    <br><br>
+                                    <ul>
+                                        <li><b class='def'>A</b> : &ensp; $3$</li>
+                                        <li><b class='def'>B</b> : &ensp; $-4$</li>
+                                        <li><b class='def'>C</b> : &ensp; $4$</li>
+                                        <li><b class='def'>D</b> : &ensp; $-4x$</li>
+                                    </ul><br>
+                                    choisir la bonne réponse :<br>
+                                    <span id='sp1' class='ic_rep'> &emsp; </span>
+                                    <span id='spl'></span>
+                                    <script type='text/javascript' language='javascript'>afficher_select('s2', 4);</script>
+
+                                    <input class="bouton1" type="button" value="Valider" onClick="verif1('s2', 0, 'L\'ordonnée à l\'origine est le terme constant.')" />
+                                    <br>
+                                    <span class='juste2' id="sp2"> &ensp; </span>
+                                </div>
+                            </form>
+                    </p>
+
+                    <p>
+
+                        <b>3.</b> Soit $f(x) = x-7$.<br>
+                    
+                        
+                            <form name="s3">
+
+                                <div class='enonce'>
+                                    Le coefficient directeur de $f$ est :
+                                    <br><br>
+                                    <ul>
+                                        <li><b class='def'>A</b> : &ensp; $7$</li>
+                                        <li><b class='def'>B</b> : &ensp; $x$</li>
+                                        <li><b class='def'>C</b> : &ensp; $-7$</li>
+                                        <li><b class='def'>D</b> : &ensp; $1$</li>
+                                    </ul><br>
+                                    choisir la bonne réponse :<br>
+                                    <span id='sp1' class='ic_rep'> &emsp; </span>
+                                    <span id='spl'></span>
+                                    <script type='text/javascript' language='javascript'>afficher_select('s3', 4);</script>
+
+                                    <input class="bouton1" type="button" value="Valider" onClick="verif1('s3', 3, 'Le coefficient directeur est le facteur de la variable.')" />
+                                    <br>
+                                    <span class='juste2' id="sp2"> &ensp; </span>
+                                </div>
+                            </form>
+                    </p>
+
+                    <p>
+
+                        <b>4.</b> Soit $f(x) = 2x$.<br>
+                    
+                        
+                            <form name="s4">
+
+                                <div class='enonce'>
+                                    L'ordonnée à l'origine de $f$ est :
+                                    <br><br>
+                                    <ul>
+                                        <li><b class='def'>A</b> : &ensp; $2$</li>
+                                        <li><b class='def'>B</b> : &ensp; $2x$</li>
+                                        <li><b class='def'>C</b> : &ensp; $0$</li>
+                                        <li><b class='def'>D</b> : &ensp; $1$</li>
+                                    </ul><br>
+                                    choisir la bonne réponse :<br>
+                                    <span id='sp1' class='ic_rep'> &emsp; </span>
+                                    <span id='spl'></span>
+                                    <script type='text/javascript' language='javascript'>afficher_select('s4', 4);</script>
+
+                                    <input class="bouton1" type="button" value="Valider" onClick="verif1('s4', 2, 'L\'ordonnée à l\'origine est le terme constant.')" />
+                                    <br>
+                                    <span class='juste2' id="sp2"> &ensp; </span>
+                                </div>
+                            </form>
+                    </p>
+
+                     <p>
+                        <input class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('aff_def_exo1',4)" />
+                        <span class="span_exo"></span>
+                    </p>
+                   
+
+                </div>
+            </li>
+
+            <li>
+                <a href="affines_definition.html"><span class='parent'>Définition</span></a>
+            </li>
+
+            <li>
+                <a href="affines.html"><span class='parent'>Fonctions affines</span></a>
+            </li>
+
+            <li>
+                <a href="../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>

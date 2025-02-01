@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style.css"/>
+        <script src="../../../script/script_exo.js"></script>
+        <title>Variations des fonctions affines</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }
+            });
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+        </script>
+
+    </head>
+
+    <header>Variations des fonctions affines</header>
+
+    <body>
+        <ul class="menu">
+            <li>
+                <div class='cours'>
+                    <p>
+                        <b class='def'>Propriété :</b>
+                        Une fonction affine $f$ définie par $f(x)=ax+b$ est :<br>
+                        &ensp;- strictement croissante si $a>0$ ; <br>
+                        &ensp;- strictement décroissante si $a<0$ ; <br>
+                        &ensp;- constante si $a=0$.
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 1 :</b>
+                        Soit $f(x)=-7x-1$.<br>
+                        Le coefficient directeur est $-7$, il est négatif.<br>
+                        La fonction $f$ est donc strictement décroissante.
+                    </p>
+                    <p>
+                        <b class='exemple'>Exemple 2 :</b>
+                        Soit $f(x)=-4+x$.<br>
+                        Le coefficient directeur est $1$, il est positif.<br>
+                        La fonction $f$ est donc strictement croissante.
+                    </p>
+                    <p>
+                        <b class='def'>Propriété (Tableau de variation) :</b> 
+                            Soit $f$ une fonction affine définie par : $f(x) = ax+b$.<br> 
+                            Le tableau de variation de $f$ est : 
+                            <ul>
+                                <li>
+                                    si $a>0$ , c'est à dire si $a$ est positif :<br>
+                                    $
+                                        \begin{array}{|c|ccc|}
+                                            \hline
+                                            x           & - \infty      &               & + \infty \\
+                                            \hline
+                                                        &               &               & + \infty \\
+                                            f(x)        &               & \nearrow      & \\
+                                                        & - \infty      &               & \\
+                                            \hline
+                                        \end{array}
+                                    $
+                                </li>
+                                <br>
+                                <li>
+                                    si $a<0$ , c'est à dire si $a$ est négatif :<br>
+                                    $
+                                        \begin{array}{|c|ccc|}
+                                            \hline
+                                            x           & - \infty      &               & + \infty  \\
+                                            \hline
+                                                        & + \infty      &               &           \\
+                                            f(x)        &               & \searrow      &           \\
+                                                        &               &               & - \infty  \\
+                                            \hline
+                                        \end{array}
+                                    $
+                                </li>
+                            </ul>
+                           
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="affines_variations_exercice1.html">
+                    <script type='text/javascript' language='javascript'>fait('aff_var_exo1');</script>Exercices 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="affines.html"><span class='parent'>Fonctions affines</span></a>
+            </li>
+            <li>
+                <a href="../../../index.html"><span class='parent'>Accueil</span></a>
+            </li>
+        </ul>
+    </body>
+
+    <footer> Michel Courtieu, License CC BY-SA 4.0 </footer>
+
+</html>

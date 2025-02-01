@@ -1,6 +1,6 @@
 function fait(chaine)
 {
-    /*localStorage.clear();*/
+    /* localStorage.clear(); */
     if(typeof localStorage!='undefined') 
     {
         nf = localStorage.getItem(chaine);
