@@ -10,8 +10,8 @@ body
 header
 {
     background:#8e8d8a;
-    border: 1px solid #8e8d8a;       /* Ajout d'une bordure */
-    border-radius:4px;
+   /* border: 1px solid #333;       /* Ajout d'une bordure */
+    border-radius:4px; */
     padding:4px 4px 4px 4px;
     margin-bottom:10px;
     font-weight:bold;
@@ -19,12 +19,14 @@ header
     color:#eae7dc;
     width:auto;
     font-size:140%;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 footer
 {
     background:#8e8d8a;
-    border: 1px solid #8e8d8a;       /* Ajout d'une bordure */
+    /* border: 1px solid #8e8d8a;       
     border-radius:4px; */
     padding:4px 4px 4px 4px;
     margin-bottom:10px;
@@ -32,6 +34,8 @@ footer
     color:#eae7dc;
     width:auto;
     font-size:80%;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 p
@@ -184,6 +188,7 @@ select:focus {
     text-decoration: none;        /* Suppression du soulignement */
     border: 1px solid #8e8d8a;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .bouton1
