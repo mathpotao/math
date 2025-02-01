@@ -3,31 +3,32 @@ body
     font-family:Arial,Helvetica,FreeSans,sans-serif;
     width:auto;
     height:auto;
+    background:#eae7dc;
 }
 
 header
 {
-    background:#aaa;
-    border:2px black solid;
+    background:#eae7dc;
+    border: 1px solid #8e8d8a;       /* Ajout d'une bordure */
     border-radius:4px;
     padding:4px 4px 4px 4px;
     margin-bottom:10px;
     font-weight:bold;
     text-align:center;
-    color:white;
+    color:#e85a4f;
     width:auto;
     font-size:140%;
 }
 
 footer
 {
-    background:#aaa;
-    border:2px black solid;
-    border-radius:4px;
+    background:#eae7dc;
+    border: 1px solid #8e8d8a;       /* Ajout d'une bordure */
+    border-radius:4px; */
     padding:4px 4px 4px 4px;
     margin-bottom:10px;
     text-align:center;
-    color:white;
+    color:#e85a4f;
     width:auto;
     font-size:80%;
 }
@@ -74,23 +75,23 @@ select:hover
     margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: center;           /* Centrage du texte */   
-    background-color: #1ABC9C;    /* Couleur d'arrière-plan */
-    color: white;                  /* Couleur du texte */
+    background-color: #d8c3a5;    /* Couleur d'arrière-plan */
+    color: #323232;                  /* Couleur du texte */
     text-decoration: none;        /* Suppression du soulignement */
-    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border: 1px solid #8e8d8a;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
 }
 
 .menu a:hover 
 {
-    background-color: #ff0000;
+    background-color: #e98074;
     color: white;
-    border-color: #ffe843;
+    border-color: #8e8d8a;
 }
 
 .parent
 {
-    color:#fdf1b8;
+    color:#323232;
     font-weight: bold  ;
 }
 
@@ -134,12 +135,12 @@ select:hover
 
 .non_fait
 {
-    color: yellow;    
+    color: red;    
 }
 
 .fait
 {
-    color: white;    
+    color: green;    
 }
 
 .def
@@ -164,10 +165,10 @@ select:hover
     margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.4rem 0.1rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: left;           /* Centrage du texte */   
-    background-color: #ccc;    /* Couleur d'arrière-plan */
+    background-color: #eae7dc;    /* Couleur d'arrière-plan */
     color: #000;                  /* Couleur du texte */
     text-decoration: none;        /* Suppression du soulignement */
-    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border: 1px solid #8e8d8a;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
 }
 
