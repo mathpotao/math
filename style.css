@@ -4,6 +4,7 @@ body
     width:auto;
     height:auto;
     background:#eae7dc;
+    font-size:100%;
 }
 
 header
@@ -40,7 +41,7 @@ p
 
 form
 {
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 select
@@ -187,14 +188,14 @@ select:focus {
 
 .bouton1
 {
-    background-color:#bbb;
+    background-color:#8e8d8a;
     color:white;
     font-size: 100%;
     margin-left: 5px;
     border: 1px solid #555;       /* Ajout d'une bordure */
     border-radius: 8px;           /* Arrondis des bordures */
     margin: 5px 20px;               /* Marges externes (1 valeurs = 4 directions) */
-    padding: 0.5rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    padding: 0.2rem 0.5rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
 }
 
 .bouton1:hover
@@ -233,8 +234,8 @@ select:focus {
 
 .question
 {
-    margin-left: 40px;
-    margin-top: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 .ic_rep
@@ -245,18 +246,21 @@ select:focus {
 .juste
 {
     color:green;
+    font-size:120%;
+
 }
 
 .juste2
 {
     color:green;
     font-size:100%;
+    margin-top: 5px;
 }
 
 .faux
 {
     color:red;
-    font-size: 60%;
+    font-size: 80%;
 }
 
 .faux2
@@ -334,12 +338,11 @@ td
 
 
 .qcm-container {
-    max-width: 600px;
-    margin: 10px auto;
-    padding: 10px;
-    background-color: #fff;
+    margin: 2px;
+    padding: 2px;
+    background-color: #ccc;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .question {
@@ -352,8 +355,9 @@ td
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 110%;
     user-select: none;
+    margin-left: 30px;
 }
 
 .radio-container input {
@@ -368,16 +372,16 @@ td
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
+    background-color: #d8c3a5;
     border-radius: 50%;
 }
 
 .radio-container:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: #e98074;
 }
 
 .radio-container input:checked ~ .checkmark {
-    background-color: #007BFF;
+    background-color: #e85a4f;
 }
 
 .checkmark:after {

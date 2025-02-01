@@ -37,6 +37,27 @@ function verif1(nom_form, k, message_err)
 }
 
 
+function verif2(nom_form,  k, message_err)
+{
+    form = document.forms[nom_form];
+    tab_radio = form.querySelectorAll('input[name="q1"][type="radio"]');
+    span_ic = form.querySelector("#sp1");
+    span_mes = form.querySelector("#sp2");
+    if (tab_radio[k].checked)
+    {
+        span_ic.innerHTML = "<b class='juste'>&#10004;</b>";
+        span_mes.innerHTML = "<b class='juste'>Bonne réponse !</b>";
+        bout.style.color = "green";
+    }
+    else
+    {
+        span_ic.innerHTML = "<b class='faux'>&#10060;</b>";
+        span_mes.innerHTML = "<b class='faux2'>" + message_err + "</b>";
+        bout.style.color = "red";
+    }
+}
+
+
 function verif(nom_form, j)
 {
     l = tab[j].length;
@@ -57,31 +78,6 @@ function verif(nom_form, j)
     }
 }
 
-function verif2(nom_form, id_span, j)
-{
-    l = tab[j].length;
-    spm = document.forms[nom_form].querySelector(".spanmes");
-    span_ic = document.getElementById(id_span);
-    somme_juste = 0;
-    for (i = 0; i < l; i++)
-    {
-        reponse =  document.getElementById(tab[j][i]).value;
-        if (reponse == rep[j][i])
-        {
-            somme_juste++;
-        }
-    }
-    if (somme_juste == l)
-    {
-        span_ic.innerHTML = "<b class='juste'>&#10004;</b>";
-        spm.innerHTML = "<b class='juste2'>Validé.</b>";
-    }
-    else
-    {
-        span_ic.innerHTML = "<b class='faux'>&#10060;</b>";
-        spm.innerHTML = "<b class='faux2'>Non validé.</b>";
-    }
-}
 
 function verif_exo(chaine, n)
 {
