@@ -13,8 +13,9 @@ function afficher_enonce(id_span, i, j)
     document.getElementById(id_span).innerHTML = tab_prop[ta[i]][j];
 }
 
-function afficher_enonce3(num, id_span)
+function afficher_enonce3(num, id_span, tab_e)
 {
+    t = tab_e
     nq = num + 1;
     formHTML = `
         <div class="form-container">
@@ -41,7 +42,7 @@ function afficher_enonce3(num, id_span)
                     </label>
                 </div>
                 <span id='sp1' class='ic_rep'> &emsp; </span>
-                <input class="bouton1" type="button" value="Valider" onClick="verif2('f` + num + `', ` + num + `, ` + tab_enonce[ta[num]][2] + `)" />
+                <input class="bouton1" type="button" value="Valider" onClick="verif('f` + num + `', ` + num + `)" />
                 <br>
                 <span class='juste2' id="sp2"> &ensp; </span>
             </form>
@@ -51,29 +52,8 @@ function afficher_enonce3(num, id_span)
     spanForm.innerHTML = formHTML;
 }
 
-function verif1(nom_form, k, message_err)
-{
-    form = document.forms[nom_form];
-    reponse =  form.querySelector("#sel").value;
-    span_ic = form.querySelector("#sp1");
-    span_mes = form.querySelector("#sp2");
-    bout = form.querySelector(".bouton1");
-    if (reponse == tab_rep[k])
-    {
-        span_ic.innerHTML = "<b class='juste'>&#10004;</b>";
-        span_mes.innerHTML = "<b class='juste'>Bonne réponse !</b>";
-        bout.style.color = "green";
-    }
-    else
-    {
-        span_ic.innerHTML = "<b class='faux'>&#10060;</b>";
-        span_mes.innerHTML = "<b class='faux2'>" + message_err + "</b>";
-        bout.style.color = "red";
-    }
-}
 
-
-function verif2(nom_form,  k, message_err)
+function verif(nom_form,  k)
 {
     form = document.forms[nom_form];
     tab_radio = form.querySelectorAll('input[name="q1"][type="radio"]');
@@ -82,33 +62,13 @@ function verif2(nom_form,  k, message_err)
     if (tab_radio[tab_rep[ta[k]]].checked)
     {
         span_ic.innerHTML = "<b class='juste'>&#10004;</b>";
-        span_mes.innerHTML = "<b class='juste'>Bonne réponse !</b>";
+        span_mes.innerHTML = `<b class='juste'>Bonne réponse !</b>`;
     }
     else
     {
         span_ic.innerHTML = "<b class='faux'>&#10060;</b>";
-        span_mes.innerHTML = "<b class='faux2'>" + message_err + "</b>";
-    }
-}
-
-
-function verif(nom_form, j)
-{
-    l = tab[j].length;
-    spm = document.forms[nom_form].querySelector(".spanmes");
-    for (i = 0; i < l; i++)
-    {
-        verif1(tab[j][i][0], tab[j][i][1], i, j);
-    }
-    tab_juste = document.forms[nom_form].querySelectorAll(".juste");
-    somme_juste = tab_juste.length;
-    if (somme_juste == l)
-    {
-        spm.innerHTML = "<b class='juste2'>Validé.</b>";
-    }
-    else
-    {
-        spm.innerHTML = "<b class='faux2'>Non validé.</b>";
+        mes_err = `<b class="faux2">` + tab_enonce[ta[k]][2] + `</b>`;
+        span_mes.innerHTML = mes_err;
     }
 }
 
