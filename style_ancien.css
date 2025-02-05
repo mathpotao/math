@@ -1,0 +1,436 @@
+body
+{
+    font-family:Arial,Helvetica,FreeSans,sans-serif;
+    width:auto;
+    height:auto;
+    background:#eae7dc;
+    font-size:100%;
+}
+
+header
+{
+    background:#8e8d8a;
+    border: 1px solid #555;       /* Ajout d'une bordure */
+    border-radius:4px; */
+    padding:4px 4px 4px 4px;
+    margin-bottom:10px;
+    font-weight:bold;
+    text-align:center;
+    color:#eae7dc;
+    width:auto;
+    font-size:140%;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+footer
+{
+    background:#8e8d8a;
+    border: 1px solid #555;       
+    border-radius:4px; */
+    padding:4px 4px 4px 4px;
+    margin-bottom:10px;
+    text-align:center;
+    color:#eae7dc;
+    width:auto;
+    font-size:80%;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+p
+{
+    margin-left: 5px;
+}
+
+form
+{
+    margin-left: 5px;
+}
+
+select
+{
+    color:red;
+    min-width: 40px;
+    font-size:100%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select:hover
+{
+    background-color: #fdf1b8;
+    min-width: 40px;
+    font-size:100%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select:focus {
+    background-color: #fdf1b8;
+    min-width: 40px;
+    font-size:100%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.menu 
+{
+    display: block;              
+    padding:0;             
+}
+
+.menu li 
+{
+    list-style-type: none ;       /* Suppression des puces */
+}
+
+.menu a 
+{
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: #d8c3a5;    /* Couleur d'arrière-plan */
+    color: #323232;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #8e8d8a;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.menu a:hover 
+{
+    background-color: #e98074;
+    color: white;
+    border-color: #8e8d8a;
+}
+
+.parent
+{
+    color:#323232;
+    font-weight: bold  ;
+}
+
+.menu2 
+{
+    display: block;          /* Transformation en flexbox */
+    min-width: 40px;             /* Largeur minimale des liens */   
+    margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.2rem 0.2rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: #d8c3a5;    /* Couleur d'arrière-plan */
+    color: blue;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-left: 20px;
+}
+
+.menu2 option
+{
+    display:block;                /* Transformation en block */
+    min-width: 40px;             /* Largeur minimale des liens */   
+    margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.2rem 0.2rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: #fdf1b8;    /* Couleur d'arrière-plan */
+    color: blue;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.menu2 option:hover
+{
+    background-color:#fdf1b8;
+}
+
+.non_fait
+{
+    color: red;    
+}
+
+.fait
+{
+    color: green;    
+}
+
+.def
+{
+    color:blue;
+}
+
+.exemple
+{
+    color:green;
+}
+
+.formule
+{
+    color:red;
+}
+
+.cours
+{
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    margin: 0.2rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 0.1rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: left;           /* Centrage du texte */   
+    background-color: #ccc;    /* Couleur d'arrière-plan */
+    color: #000;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #8e8d8a;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.bouton1
+{
+    background-color:#8e8d8a;
+    color:white;
+    font-size: 110%;
+    margin-left: 5px;
+    border: 1px solid #555;       /* Ajout d'une bordure */
+    border-radius: 8px;           /* Arrondis des bordures */
+    margin: 5px 20px;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.2rem 0.5rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+}
+
+.bouton1:hover
+{
+    background-color: #e98074;
+}
+
+.bouton2
+{
+    background-color:red;
+    font-weight:bold;
+    color:white;
+    font-size: 100%;
+    text-align: center;
+    border: 1px solid #555;       /* Ajout d'une bordure */
+    border-radius: 8px;           /* Arrondis des bordures */
+    margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.5rem 0.5rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+}
+
+.bouton2:hover
+{
+    background-color: darkorange;
+}
+
+.bouton3
+{
+    background-color:purple;
+    font-weight:bold;
+    color:white;
+    font-size: 100%;
+    text-align: center;
+    border: 1px solid #555;       /* Ajout d'une bordure */
+    border-radius: 8px;           /* Arrondis des bordures */
+    margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.5rem 0.5rem;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+}
+
+.enonce
+{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.quiz
+{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.question
+{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.ic_rep
+{
+    float:left;
+}
+
+.juste
+{
+    color:green;
+    font-size:100%;
+
+}
+
+.juste2
+{
+    color:green;
+    font-size:100%;
+    margin-top: 5px;
+}
+
+.faux
+{
+    color:red;
+    font-size: 80%;
+}
+
+.faux2
+{
+    color:red;
+    font-size:100%;
+}
+
+table 
+{
+    border: medium solid black;
+    border-collapse: collapse;
+    border-color: black;
+    width: auto;
+    margin-left:1px;
+    box-shadow:6px 6px 4px #666;
+}
+
+th
+{
+    font-family: arial;
+    border: 2px solid black;
+    border-color: black;
+    color:black;
+    width: auto;
+    padding: 1px 1px 1px 1px;
+    /*background-color: #1A8BBF;*/
+    background-color:white;
+    font-size:100%;
+    text-align: center;
+}
+
+td 
+{
+    font-family: sans-serif;
+    border-bottom: 2px solid black;
+    border-color: black;;
+    color:black;
+    width: auto;
+    padding: 1px 1px 1px 1px;
+    text-align: center;
+    font-size:100%;
+    background-color: white;
+    /*max-width: 400px;*/
+}
+
+.t_bas
+{
+    border-bottom: none;
+}
+
+.t_haut
+{
+    border-top: none;
+}
+
+.t_bh
+{
+    border-bottom: none;
+    border-top: none;
+}
+
+.carB
+{
+    background-color: white;
+    color:black;
+    font-size:20px;
+    width:40px;
+    height:30px;
+    text-align: center;
+    border: none;
+    margin: 0px;
+    padding:0px;
+}
+
+
+.form-container {
+    margin: 2px;
+    padding: 2px;
+    background-color: #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.question {
+    margin-bottom: 10px;
+}
+
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 8px;
+    padding-top: 4px;
+    cursor: pointer;
+    font-size: 120%;
+    user-select: none;
+    margin-left: 30px;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #d8c3a5;
+    border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+    background-color: #e98074;
+}
+
+.radio-container input:checked ~ .checkmark {
+    background-color: #e85a4f;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radio-container .checkmark:after {
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/*
+@media screen and (min-width: 640px) {
+    
+   .menu a 
+    {
+        background-color: #3498db;
+    }
+}
+*/

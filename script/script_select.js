@@ -1,18 +1,54 @@
-tab_rep = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'];
-
-function afficher_select(nom_form, n)
+function trier(ta)
 {
-    
-    aff = '<select class="menu2" id="sel" name="n1" width="5">';
-    aff = aff + '<option selected="selected"></option>';
-    for (var i = 0; i < n; i++)
-    {
-        aff = aff + '<option>' + tab_rep[i] + '</option>';
-    }
-    aff = aff + '</select>';
-    form = document.forms[nom_form];
-    span = form.querySelector("#spl");
-    span.innerHTML = aff;
+    for (let i = ta.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [ta[i], ta[j]] = [ta[j], ta[i]];
+  }
+}
+
+trier(ta);
+
+function afficher_enonce(id_span, i, j)
+{
+    document.getElementById(id_span).innerHTML = tab_prop[ta[i]][j];
+}
+
+function afficher_enonce3(num, id_span)
+{
+    nq = num + 1;
+    formHTML = `
+        <div class="form-container">
+            <form id="f` + num + `">
+                <div class="question">
+                    <b> ` + nq + `. </b>
+                    ` + tab_enonce[ta[num]][0] + 
+                    `<br> <p> ` + tab_enonce[ta[num]][1] + `</p>
+                    <label class="radio-container">
+                        <input type="radio" name="q1">` + tab_prop[ta[num]][0] + `
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" name="q1">` + tab_prop[ta[num]][1] + `
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" name="q1">` + tab_prop[ta[num]][2] + `
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" name="q1">` + tab_prop[ta[num]][3] + `
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <span id='sp1' class='ic_rep'> &emsp; </span>
+                <input class="bouton1" type="button" value="Valider" onClick="verif2('f` + num + `', ` + num + `, ` + tab_enonce[ta[num]][2] + `)" />
+                <br>
+                <span class='juste2' id="sp2"> &ensp; </span>
+            </form>
+        </div>
+    `;
+    spanForm = document.getElementById(id_span);
+    spanForm.innerHTML = formHTML;
 }
 
 function verif1(nom_form, k, message_err)
@@ -43,7 +79,7 @@ function verif2(nom_form,  k, message_err)
     tab_radio = form.querySelectorAll('input[name="q1"][type="radio"]');
     span_ic = form.querySelector("#sp1");
     span_mes = form.querySelector("#sp2");
-    if (tab_radio[k].checked)
+    if (tab_radio[tab_rep[ta[k]]].checked)
     {
         span_ic.innerHTML = "<b class='juste'>&#10004;</b>";
         span_mes.innerHTML = "<b class='juste'>Bonne réponse !</b>";
@@ -96,5 +132,6 @@ function verif_exo(chaine, n)
     else
     {
         m.innerHTML = "<b class='faux2'>Exercice non validé.</b>";
+        bout.style.backgroundColor = "red";
     }
 }

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Exercice1</title>
         <link rel="stylesheet" href="../../../style.css" />
-        <script src="script/script_affines_definition_exercice1.js"></script>
+        <script src="script/script_aff_def_exo3.js"></script>
         <script src="../../../script/script_select.js"></script>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
@@ -26,128 +26,18 @@
         <ul class="menu">
             <li>
 
-                 <div class="qcm-container">
-                    <form id="f1">
-                        <div class="question">
-                            <b>1.</b> Soit $f(x) = -4x+3$.
-                            <p>Le coefficient directeur de $f$ est :</p>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $3$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $-4$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $4$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $-4x$
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                        <span id='sp1' class='ic_rep'> &emsp; </span>
-                        <input class="bouton1" type="button" value="Valider" onClick="verif2('f1', 1, 'Le coefficient directeur est le facteur de la variable.')" />
-                        <br>
-                        <span class='juste2' id="sp2"> &ensp; </span>
-                    </form>
-                </div>
-
+                <span id='form1'></span> 
+                <script>afficher_enonce3(0, 'form1');</script>
+                <br>
+                <span id='form2'></span> 
+                <script>afficher_enonce3(1, 'form2');</script>
+                <br>
+                <span id='form3'></span> 
+                <script>afficher_enonce3(2, 'form3');</script>
+                <br>
+                <span id='form4'></span> 
+                <script>afficher_enonce3(3, 'form4');</script>
                 <p></p>
-
-                <div class="qcm-container">
-                    <form id="f2">
-                        <div class="question">
-                            <b>1.</b> Soit $f(x) = -4x+3$.
-                            <p>L'ordonnée à l'origine de $f$ est :</p>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $3$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $-4$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $4$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $-4x$
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                        <span id='sp1' class='ic_rep'> &emsp; </span>
-                        <input class="bouton1" type="button" value="Valider" onClick="verif2('f2', 0, 'L\'ordonnée à l\'origine est le terme constant.')" />
-                        <br>
-                        <span class='juste2' id="sp2"> &ensp; </span>
-                    </form>
-                </div>
-
-                <p></p>
-
-                <div class="qcm-container">
-                    <form id="f3">
-                        <div class="question">
-                            <b>1.</b> Soit $f(x) = x-7$.
-                            <p>Le coefficient directeur de $f$ est :</p>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $7$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $-7$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $x$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $1$
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                        <span id='sp1' class='ic_rep'> &emsp; </span>
-                        <input class="bouton1" type="button" value="Valider" onClick="verif2('f3', 3, 'Le coefficient directeur est le facteur de la variable.')" />
-                        <br>
-                        <span class='juste2' id="sp2"> &ensp; </span>
-                    </form>
-                </div>
-
-                <p></p>
-
-                <div class="qcm-container">
-                    <form id="f4">
-                        <div class="question">
-                            <b>1.</b> Soit $f(x) = 2x$.
-                            <p>L'ordonnée à l'origine de $f$ est :</p>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $2$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $2x$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $0$
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                <input type="radio" name="q1"> $1$
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                        <span id='sp1' class='ic_rep'> &emsp; </span>
-                        <input class="bouton1" type="button" value="Valider" onClick="verif2('f4', 2, 'Le coefficient directeur est le facteur de la variable.')" />
-                        <br>
-                        <span class='juste2' id="sp2"> &ensp; </span>
-                    </form>
-                </div>
-
                 <p>
                     <input id='bv' class="bouton2" type="button" value="Valider l'exercice" onClick="verif_exo('aff_def_exo1',4)" />
                     <span class="span_exo"></span>
