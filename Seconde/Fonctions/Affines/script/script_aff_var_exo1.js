@@ -1,8 +1,10 @@
 var ta = [0, 1, 2, 3, 4, 5, 6, 7];
 
+nb_prop = 3;
+
 q = "La fonction $f$ est : ";
-m1 = "Il faut repérer le signe du coefficient directeur."
-m2 = "Le coefficient directeur est nul."
+m1 = "Il faut repérer le signe du coefficient directeur.";
+m2 = "Le coefficient directeur est nul.";
 
 var tab_enonce = [
         ["Soit $f(x)=-4x+3$", q, m1],
@@ -18,18 +20,16 @@ var tab_enonce = [
 p1 = "strictement croissante";
 p2 = "strictement décroisante";
 p3 = "constante";
-p4 = "positive";
-p5 = "négative";
 
 var tab_prop = [
-                [p1, p2, p3, p4],
-                [p1, p2, p3, p4],
-                [p1, p2, p3, p4],
-                [p1, p2, p3, p4],
-                [p1, p2, p3, p4],
-                [p1, p2, p3, p4],
-                [p1, p2, p3, p4],
-                [p1, p2, p3, p5]
+                [p1, p2, p3],
+                [p1, p2, p3],
+                [p1, p2, p3],
+                [p1, p2, p3],
+                [p1, p2, p3],
+                [p1, p2, p3],
+                [p1, p2, p3],
+                [p1, p2, p3]
             ];
 
 var tab_rep = [1, 0, 1, 0, 0, 1, 2, 2];

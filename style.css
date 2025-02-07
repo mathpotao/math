@@ -5,6 +5,7 @@ body
     height:auto;
     background:#eae7dc;
     font-size:100%;
+    margin:0.1em;
 }
 
 header
@@ -13,7 +14,7 @@ header
     border: 2px solid #555;
     border-radius:5px;
     padding:0.1em;
-    margin:0.4em;
+    margin:0.4em 0.1em;
     font-weight:bold;
     text-align:center;
     color:#eae7dc;
@@ -28,8 +29,7 @@ footer
     border: 1px solid #555;       
     border-radius:5px; 
     padding: 0.1em;
-    margin-top:0.8em;
-    margin-bottom:1em;
+    margin:0.4em 0.1em;
     text-align:center;
     color:#eae7dc;
     width:auto;
@@ -40,19 +40,19 @@ footer
 
 p
 {
-    margin-left: 0.2em;
+    margin-left: 0.1em;
 }
 
 form
 {
-    margin-left: 0.2em;
+    margin-left: 0.1em;
 }
 
 .menu 
 {
     display: block;              
     padding:0;
-    margin: 0.6rem;             
+    margin: 0.6rem 0.2rem;             
 }
 
 .menu li 
@@ -64,8 +64,8 @@ form
 {
     display:block;
     min-width: 120px;
-    margin: 0.4rem;  
-    padding: 0.4rem 0;   
+    margin: 0.4rem 0.1rem;  
+    padding: 0.4rem 0.1rem;   
     text-align: center;  
     background-color: #d8c3a5;
     color: #323232;     
@@ -117,7 +117,7 @@ form
 {
     display:block; 
     min-width: 120px; 
-    margin: 0.5rem; 
+    margin: 0.4rem 0.1rem; 
     padding: 0.4rem 0.1rem;
     text-align: left; 
     background-color: #ccc;
@@ -155,7 +155,7 @@ form
     border: 1px solid #555;     
     border-radius: 8px;         
     margin: 0.5rem; 
-    margin-bottom: 0.2em;             
+    margin-bottom: 0em;             
     padding: 0.5rem 0.5rem;       
 }
 
